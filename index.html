@@ -424,20 +424,31 @@
           </p>
           <div class="flex flex-col items-center justify-center">
             <div
-              class="flex flex-col md:flex-row gap-8 justify-center items-center mb-4"
+              class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-4 w-full px-4 max-w-2xl"
             >
               <a
                 href="https://app.dmovezone.com"
                 target="_blank"
-                class="px-10 py-5 bg-indigo-600 hover:bg-indigo-500 text-white font-black rounded-xl transition-all shadow-[0_0_30px_rgba(79,70,229,0.5)] text-lg group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95"
+                class="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-black rounded-xl transition-all shadow-[0_0_30px_rgba(79,70,229,0.5)] text-base group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95 whitespace-nowrap"
                 data-t="hero_cta_individual"
               >
                 ACTIVA TU PASAPORTE FÍSICO
                 <i
                   data-lucide="arrow-right"
-                  class="w-6 h-6 group-hover:translate-x-1 transition-transform"
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
                 ></i>
               </a>
+              <button
+                onclick="openVideoModal()"
+                class="w-full sm:w-auto px-8 py-4 bg-slate-900/60 hover:bg-slate-800/85 text-white border border-white/10 hover:border-indigo-500/50 font-black rounded-xl transition-all text-base group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95 whitespace-nowrap cursor-pointer"
+              >
+                <span
+                  class="w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 shrink-0"
+                >
+                  <i data-lucide="play" class="w-3 h-3 fill-current ml-0.5"></i>
+                </span>
+                <span data-t="hero_cta_video">CONÓCENOS EN 1 MINUTO</span>
+              </button>
             </div>
             <p
               class="text-sm text-slate-400 mt-2 font-medium"
@@ -4366,6 +4377,7 @@
           hero_microcopy:
             "DMove is a club membership for physical performance and longevity.",
           hero_cta_individual: "ACTIVATE YOUR PHYSICAL PASSPORT",
+          hero_cta_video: "MEET DMOVE IN 1 MINUTE",
 
           // Triple Saving Section (The Efficiency Hub)
           roi_title: "Why DMove?",
@@ -5009,6 +5021,7 @@
           hero_microcopy:
             "DMove es una membresía de club para el rendimiento físico y la longevidad.",
           hero_cta_individual: "ACTIVA TU PASAPORTE FÍSICO",
+          hero_cta_video: "CONÓCENOS EN 1 MINUTO",
 
           // Triple Saving Section (The Efficiency Hub)
           roi_title: "¿Por qué DMove?",
@@ -5653,6 +5666,7 @@
           hero_microcopy:
             "DMove est une adhésion de club pour la performance physique et la longévité.",
           hero_cta_individual: "ACTIVEZ VOTRE PASSEPORT PHYSIQUE",
+          hero_cta_video: "DÉCOUVREZ DMOVE EN 1 MIN",
 
           // Triple Saving Section (The Efficiency Hub)
           roi_title: "Pourquoi DMove ?",
@@ -6200,6 +6214,51 @@
         }
       });
 
+      // Video Modal Functions
+      const videoModal = document.getElementById("video-modal");
+      const explainerVideo = document.getElementById("explainer-video");
+
+      window.openVideoModal = function() {
+        if (!videoModal) return;
+        videoModal.classList.remove("hidden");
+        // Force reflow
+        videoModal.offsetHeight;
+        videoModal.classList.remove("opacity-0");
+        videoModal.classList.add("opacity-100");
+        const modalContainer = videoModal.querySelector(".scale-95");
+        if (modalContainer) {
+          modalContainer.classList.remove("scale-95");
+          modalContainer.classList.add("scale-100");
+        }
+        if (explainerVideo) {
+          explainerVideo.play().catch(e => console.log("Play blocked", e));
+        }
+      };
+
+      window.closeVideoModal = function() {
+        if (!videoModal) return;
+        videoModal.classList.remove("opacity-100");
+        videoModal.classList.add("opacity-0");
+        const modalContainer = videoModal.querySelector(".scale-100");
+        if (modalContainer) {
+          modalContainer.classList.remove("scale-100");
+          modalContainer.classList.add("scale-95");
+        }
+        if (explainerVideo) {
+          explainerVideo.pause();
+          explainerVideo.currentTime = 0;
+        }
+        setTimeout(() => {
+          videoModal.classList.add("hidden");
+        }, 300);
+      };
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && videoModal && !videoModal.classList.contains("hidden")) {
+          closeVideoModal();
+        }
+      });
+
       // Immediate icon check for dynamically added content
       if (typeof lucide !== "undefined") {
         lucide.createIcons();
@@ -6223,6 +6282,34 @@
           class="w-8 h-8 group-hover:scale-110 transition-transform"
         ></i>
       </a>
+    </div>
+
+    <!-- Video Modal -->
+    <div
+      id="video-modal"
+      class="fixed inset-0 z-[150] hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6 md:p-10 backdrop-blur-md bg-slate-950/80"
+      onclick="closeVideoModal()"
+    >
+      <div
+        class="w-full max-w-4xl bg-slate-900/90 rounded-[2rem] border border-white/10 overflow-hidden relative shadow-2xl scale-95 transition-transform duration-300"
+        onclick="event.stopPropagation()"
+      >
+        <button
+          onclick="closeVideoModal()"
+          class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-950/60 hover:bg-slate-800/80 text-white flex items-center justify-center border border-white/10 transition-all cursor-pointer"
+        >
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div class="aspect-video w-full">
+          <video
+            id="explainer-video"
+            src="/assets/dmove_explainer.mp4"
+            controls
+            playsinline
+            class="w-full h-full object-cover"
+          ></video>
+        </div>
+      </div>
     </div>
   </body>
 </html>
