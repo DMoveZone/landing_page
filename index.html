@@ -461,6 +461,49 @@
       </div>
     </section>
 
+    <!-- Explainer Video Section -->
+    <section id="explainer-video-section" class="py-16 relative bg-slate-950 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="glass-card p-8 md:p-12 rounded-[2.5rem] border border-white/10 bg-slate-900/40 shadow-2xl flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+          
+          <!-- Text column -->
+          <div class="w-full lg:w-1/2 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4" data-t="video_section_badge">
+              El Toque Humano
+            </div>
+            <h2 class="font-outfit text-3xl md:text-4xl font-extrabold text-white leading-tight mb-6" data-t="video_section_title">
+              Hola, soy David. Así funciona el método DMoveZone.
+            </h2>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6 font-medium" data-t="video_section_desc_1">
+              He diseñado este ecosistema para que no tengas que preocuparte por lesiones, fatiga o dolores diarios. En este vídeo te explico cómo te acompañamos cada día para optimizar tu salud, tu tiempo y tu dinero.
+            </p>
+            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+              <img src="/assets/founder_real.jpg" alt="David Martin" class="w-12 h-12 rounded-full object-cover border border-indigo-500/30 shrink-0" />
+              <div>
+                <h4 class="font-outfit font-bold text-white text-sm">David Martin</h4>
+                <p class="text-xs text-slate-400 font-medium">Founder & Head Coach, DMoveZone</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video column -->
+          <div class="w-full lg:w-1/2">
+            <div class="relative aspect-video rounded-2xl overflow-hidden bg-slate-950/60 border border-white/10 group shadow-lg">
+              <video
+                id="inline-explainer-video"
+                src="/assets/dmove_explainer.mp4"
+                poster="/assets/founder_real.jpg"
+                controls
+                playsinline
+                class="w-full h-full object-cover"
+              ></video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Continuous Performance Scale Section -->
     <section id="is-it-for-you" class="py-24 relative bg-slate-950">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -4378,6 +4421,9 @@
             "DMove is a club membership for physical performance and longevity.",
           hero_cta_individual: "ACTIVATE YOUR PHYSICAL PASSPORT",
           hero_cta_video: "MEET DMOVE IN 1 MINUTE",
+          video_section_badge: "The Human Touch",
+          video_section_title: "Hi, I'm David. This is how the DMoveZone method works.",
+          video_section_desc_1: "I designed this ecosystem so you don't have to worry about injuries, fatigue, or daily aches. In this video, I explain how we support you every day to optimize your health, time, and money.",
 
           // Triple Saving Section (The Efficiency Hub)
           roi_title: "Why DMove?",
@@ -5022,6 +5068,9 @@
             "DMove es una membresía de club para el rendimiento físico y la longevidad.",
           hero_cta_individual: "ACTIVA TU PASAPORTE FÍSICO",
           hero_cta_video: "CONÓCENOS EN 1 MINUTO",
+          video_section_badge: "El Toque Humano",
+          video_section_title: "Hola, soy David. Así funciona el método DMoveZone.",
+          video_section_desc_1: "He diseñado este ecosistema para que no tengas que preocuparte por lesiones, fatiga o dolores diarios. En este vídeo te explico cómo te acompañamos cada día para optimizar tu salud, tu tiempo y tu dinero.",
 
           // Triple Saving Section (The Efficiency Hub)
           roi_title: "¿Por qué DMove?",
@@ -5667,6 +5716,9 @@
             "DMove est une adhésion de club pour la performance physique et la longévité.",
           hero_cta_individual: "ACTIVEZ VOTRE PASSEPORT PHYSIQUE",
           hero_cta_video: "DÉCOUVREZ DMOVE EN 1 MIN",
+          video_section_badge: "La Touche Humaine",
+          video_section_title: "Bonjour, je suis David. Voici comment fonctionne la méthode DMoveZone.",
+          video_section_desc_1: "J'ai conçu cet écosystème pour que vous n'y ayez pas à vous soucier des blessures, de la fatigue ou des douleurs quotidiennes. Dans cette vidéo, je vous explique comment nous vous accompagnons chaque jour pour optimiser votre santé, votre temps et votre argent.",
 
           // Triple Saving Section (The Efficiency Hub)
           roi_title: "Pourquoi DMove ?",
@@ -6214,50 +6266,19 @@
         }
       });
 
-      // Video Modal Functions
-      const videoModal = document.getElementById("video-modal");
-      const explainerVideo = document.getElementById("explainer-video");
-
+      // Video Scroll and Inline Play Function
       window.openVideoModal = function() {
-        if (!videoModal) return;
-        videoModal.classList.remove("hidden");
-        // Force reflow
-        videoModal.offsetHeight;
-        videoModal.classList.remove("opacity-0");
-        videoModal.classList.add("opacity-100");
-        const modalContainer = videoModal.querySelector(".scale-95");
-        if (modalContainer) {
-          modalContainer.classList.remove("scale-95");
-          modalContainer.classList.add("scale-100");
-        }
-        if (explainerVideo) {
-          explainerVideo.play().catch(e => console.log("Play blocked", e));
+        const videoSection = document.getElementById("explainer-video-section");
+        if (videoSection) {
+          videoSection.scrollIntoView({ behavior: "smooth" });
+          const inlineVideo = document.getElementById("inline-explainer-video");
+          if (inlineVideo) {
+            setTimeout(() => {
+              inlineVideo.play().catch(e => console.log("Play blocked", e));
+            }, 600);
+          }
         }
       };
-
-      window.closeVideoModal = function() {
-        if (!videoModal) return;
-        videoModal.classList.remove("opacity-100");
-        videoModal.classList.add("opacity-0");
-        const modalContainer = videoModal.querySelector(".scale-100");
-        if (modalContainer) {
-          modalContainer.classList.remove("scale-100");
-          modalContainer.classList.add("scale-95");
-        }
-        if (explainerVideo) {
-          explainerVideo.pause();
-          explainerVideo.currentTime = 0;
-        }
-        setTimeout(() => {
-          videoModal.classList.add("hidden");
-        }, 300);
-      };
-
-      window.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && videoModal && !videoModal.classList.contains("hidden")) {
-          closeVideoModal();
-        }
-      });
 
       // Immediate icon check for dynamically added content
       if (typeof lucide !== "undefined") {
@@ -6282,34 +6303,6 @@
           class="w-8 h-8 group-hover:scale-110 transition-transform"
         ></i>
       </a>
-    </div>
-
-    <!-- Video Modal -->
-    <div
-      id="video-modal"
-      class="fixed inset-0 z-[150] hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6 md:p-10 backdrop-blur-md bg-slate-950/80"
-      onclick="closeVideoModal()"
-    >
-      <div
-        class="w-full max-w-4xl bg-slate-900/90 rounded-[2rem] border border-white/10 overflow-hidden relative shadow-2xl scale-95 transition-transform duration-300"
-        onclick="event.stopPropagation()"
-      >
-        <button
-          onclick="closeVideoModal()"
-          class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-950/60 hover:bg-slate-800/80 text-white flex items-center justify-center border border-white/10 transition-all cursor-pointer"
-        >
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-        <div class="aspect-video w-full">
-          <video
-            id="explainer-video"
-            src="/assets/dmove_explainer.mp4"
-            controls
-            playsinline
-            class="w-full h-full object-cover"
-          ></video>
-        </div>
-      </div>
     </div>
   </body>
 </html>
