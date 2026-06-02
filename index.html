@@ -6278,10 +6278,9 @@
       });
 
       // Video Modal Functions
-      const videoModal = document.getElementById("video-modal");
-      const explainerVideo = document.getElementById("explainer-video");
-
       window.openVideoModal = function() {
+        const videoModal = document.getElementById("video-modal");
+        const explainerVideo = document.getElementById("explainer-video");
         if (!videoModal) return;
         videoModal.classList.remove("hidden");
         // Force reflow
@@ -6299,6 +6298,8 @@
       };
 
       window.closeVideoModal = function() {
+        const videoModal = document.getElementById("video-modal");
+        const explainerVideo = document.getElementById("explainer-video");
         if (!videoModal) return;
         videoModal.classList.remove("opacity-100");
         videoModal.classList.add("opacity-0");
@@ -6317,6 +6318,7 @@
       };
 
       window.addEventListener("keydown", (e) => {
+        const videoModal = document.getElementById("video-modal");
         if (e.key === "Escape" && videoModal && !videoModal.classList.contains("hidden")) {
           closeVideoModal();
         }
