@@ -241,22 +241,16 @@
               >Why DMove?</a
             >
             <a
-              href="#player"
+              href="#pricing"
               class="nav-link text-sm font-medium hover:text-white transition"
-              data-t="nav_player"
-              >Your coverage</a
+              data-t="nav_plans"
+              >Pricing</a
             >
             <a
               href="#dmove-hub"
               class="nav-link text-sm font-medium hover:text-white transition"
               data-t="nav_team"
               >DMove HUB</a
-            >
-            <a
-              href="#pricing"
-              class="nav-link text-sm font-medium hover:text-white transition"
-              data-t="nav_plans"
-              >Pricing</a
             >
 
             <!-- Language Switcher -->
@@ -349,14 +343,11 @@
           <a href="#roi" class="text-lg font-medium" data-t="nav_app"
             >Why DMove?</a
           >
-          <a href="#player" class="text-lg font-medium" data-t="nav_player"
-            >Your coverage</a
+          <a href="#pricing" class="text-lg font-medium" data-t="nav_plans"
+            >Pricing</a
           >
           <a href="#dmove-hub" class="text-lg font-medium" data-t="nav_team"
             >DMove HUB</a
-          >
-          <a href="#pricing" class="text-lg font-medium" data-t="nav_plans"
-            >Pricing</a
           >
           <a
             href="https://app.dmovezone.com"
@@ -377,7 +368,7 @@
       <div class="absolute inset-0 z-0 overflow-hidden">
         <!-- Background Image with Overlay -->
         <img
-          src="/assets/hero.png"
+          src="/assets/hero.jpg"
           alt="DMove Basketball Performance"
           class="w-full h-full object-cover opacity-40 mix-blend-luminosity transform scale-105"
         />
@@ -392,16 +383,7 @@
       <div
         class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40 text-center"
       >
-        <div class="max-w-4xl mx-auto">
-          <div
-            class="inline-flex items-center gap-2.5 px-5 py-2 bg-slate-900/80 backdrop-blur-md border border-indigo-500/30 rounded-full shadow-[0_0_20px_rgba(99,102,241,0.15)] text-slate-300 text-xs md:text-sm font-bold uppercase tracking-widest mb-8"
-          >
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            <span data-t="hero_badge">Bienvenido a <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 font-extrabold tracking-wider">DMOVEZONE</span></span>
-          </div>
+        <div class="max-w-5xl mx-auto">
           <p
             class="font-outfit text-indigo-400 text-lg md:text-xl font-extrabold tracking-wider mb-6 uppercase"
             data-t="hero_hook"
@@ -409,18 +391,18 @@
             Solo ganamos si te mantienes sano
           </p>
           <h1
-            class="font-outfit text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-8 max-w-4xl mx-auto tracking-tight text-balance uppercase"
+            class="font-outfit text-2xl sm:text-[1.875rem] md:text-[2.25rem] lg:text-[3rem] xl:text-[3.5rem] font-black text-white leading-[1.15] mb-8 max-w-none mx-auto tracking-tight uppercase"
             data-t="hero_title"
           >
-            EL SISTEMA PARA LA CONTINUIDAD FÍSICA
-            <br class="hidden md:block" />
-            Y LA LONGEVIDAD.
+            The system for fewer injuries
+            <br class="hidden sm:block" />
+            &amp; better performance
           </h1>
           <p
             class="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-3xl mx-auto font-medium"
             data-t="hero_subtitle_1"
           >
-            Gestión estratégica de tu capacidad física para optimizar<br class="hidden sm:block" /> tu salud, tu tiempo y tu dinero.
+            Monitoreamos los 5 factores clave que predicen las lesiones antes de que ocurran.
           </p>
           <div class="flex flex-col items-center justify-center">
             <div
@@ -451,10 +433,134 @@
               </button>
             </div>
             <p
-              class="text-sm text-slate-400 mt-2 font-medium"
+              class="text-sm text-slate-400 mt-2 mb-12 font-medium"
               data-t="hero_microcopy"
             >
               DMove es una membresía de club para el rendimiento físico y la longevidad.
+            </p>
+          </div>
+
+          <!-- Carousel / Slider Component -->
+          <div class="w-full max-w-5xl mx-auto px-4 relative overflow-hidden mt-8 mb-4">
+            <!-- Carousel Track Wrapper -->
+            <div class="relative overflow-hidden group/slider">
+              <div 
+                id="hero-stats-track"
+                class="flex gap-4 cursor-grab active:cursor-grabbing select-none transition-transform duration-300 ease-out"
+                style="transform: translateX(0px);"
+              >
+                <!-- Card 1 -->
+                <div class="flex-shrink-0 w-[300px] sm:w-[360px] p-6 rounded-2xl border border-white/5 bg-slate-900/60 backdrop-blur-xl flex items-center gap-4 text-left relative overflow-hidden group hover:border-indigo-500/30 transition-all duration-300">
+                  <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-600/5 rounded-full blur-2xl pointer-events-none"></div>
+                  <!-- Circular percentage badge -->
+                  <div 
+                    class="w-20 h-20 rounded-full border-2 border-indigo-500/40 flex items-center justify-center bg-indigo-500/10 shrink-0 font-outfit text-white font-black text-2xl shadow-[0_0_20px_rgba(99,102,241,0.3)] animate-pulse"
+                    data-t="carousel_val_1"
+                  >
+                    43%
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-indigo-400 uppercase mb-1 block" data-t="carousel_tag_1">Sport</span>
+                    <p class="text-slate-200 text-sm font-semibold leading-snug" data-t="carousel_stat_1">of athletes get injured every season</p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex-shrink-0 w-[300px] sm:w-[360px] p-6 rounded-2xl border border-white/5 bg-slate-900/60 backdrop-blur-xl flex items-center gap-4 text-left relative overflow-hidden group hover:border-emerald-500/30 transition-all duration-300">
+                  <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-600/5 rounded-full blur-2xl pointer-events-none"></div>
+                  <!-- Circular percentage badge -->
+                  <div 
+                    class="w-20 h-20 rounded-full border-2 border-emerald-500/40 flex items-center justify-center bg-emerald-500/10 shrink-0 font-outfit text-white font-black text-2xl shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                    data-t="carousel_val_2"
+                  >
+                    60%
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-emerald-400 uppercase mb-1 block" data-t="carousel_tag_2">Workplace</span>
+                    <p class="text-slate-200 text-sm font-semibold leading-snug" data-t="carousel_stat_2">of all sick leaves are MSK-related</p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex-shrink-0 w-[300px] sm:w-[360px] p-6 rounded-2xl border border-white/5 bg-slate-900/60 backdrop-blur-xl flex items-center gap-4 text-left relative overflow-hidden group hover:border-cyan-500/30 transition-all duration-300">
+                  <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-600/5 rounded-full blur-2xl pointer-events-none"></div>
+                  <!-- Circular value badge -->
+                  <div 
+                    class="w-20 h-20 rounded-full border-2 border-cyan-500/40 flex flex-col items-center justify-center bg-cyan-500/10 shrink-0 font-outfit text-white font-black text-2xl shadow-[0_0_20px_rgba(6,182,212,0.3)]"
+                    data-t="carousel_val_3"
+                  >
+                    17<br><span class='text-[10px] uppercase font-bold tracking-normal opacity-85 block -mt-1'>days</span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-cyan-400 uppercase mb-1 block" data-t="carousel_tag_3">Sport</span>
+                    <p class="text-slate-200 text-sm font-semibold leading-snug" data-t="carousel_stat_3">lost per injury on average</p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flex-shrink-0 w-[300px] sm:w-[360px] p-6 rounded-2xl border border-white/5 bg-slate-900/60 backdrop-blur-xl flex items-center gap-4 text-left relative overflow-hidden group hover:border-indigo-500/30 transition-all duration-300">
+                  <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-600/5 rounded-full blur-2xl pointer-events-none"></div>
+                  <!-- Circular percentage badge -->
+                  <div 
+                    class="w-20 h-20 rounded-full border-2 border-indigo-500/40 flex items-center justify-center bg-indigo-500/10 shrink-0 font-outfit text-white font-black text-lg shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+                    data-t="carousel_val_4"
+                  >
+                    20-40%
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-indigo-400 uppercase mb-1 block" data-t="carousel_tag_4">Productivity lost</span>
+                    <p class="text-slate-200 text-sm font-semibold leading-snug" data-t="carousel_stat_4">productivity loss playing or working with pain</p>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flex-shrink-0 w-[300px] sm:w-[360px] p-6 rounded-2xl border border-white/5 bg-slate-900/60 backdrop-blur-xl flex items-center gap-4 text-left relative overflow-hidden group hover:border-emerald-500/30 transition-all duration-300">
+                  <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-600/5 rounded-full blur-2xl pointer-events-none"></div>
+                  <!-- Circular percentage badge -->
+                  <div 
+                    class="w-20 h-20 rounded-full border-2 border-emerald-500/40 flex items-center justify-center bg-emerald-500/10 shrink-0 font-outfit text-white font-black text-2xl shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                    data-t="carousel_val_5"
+                  >
+                    68%
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-emerald-400 uppercase mb-1 block" data-t="carousel_tag_5">The opportunity</span>
+                    <p class="text-slate-200 text-sm font-semibold leading-snug" data-t="carousel_stat_5">of injuries preventable with proper monitoring</p>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="flex-shrink-0 w-[300px] sm:w-[360px] p-6 rounded-2xl border border-white/5 bg-slate-900/60 backdrop-blur-xl flex items-center gap-4 text-left relative overflow-hidden group hover:border-cyan-500/30 transition-all duration-300">
+                  <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-600/5 rounded-full blur-2xl pointer-events-none"></div>
+                  <!-- Circular percentage badge -->
+                  <div 
+                    class="w-20 h-20 rounded-full border-2 border-cyan-500/40 flex items-center justify-center bg-cyan-500/10 shrink-0 font-outfit text-white font-black text-xl shadow-[0_0_20px_rgba(6,182,212,0.3)]"
+                    data-t="carousel_val_6"
+                  >
+                    ROI
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-cyan-400 uppercase mb-1 block" data-t="carousel_tag_6">The ROI</span>
+                    <p class="text-slate-200 text-sm font-semibold leading-snug" data-t="carousel_stat_6">$1 → $2-6 return on every dollar invested in prevention</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Dot Navigation Indicators -->
+            <div class="flex justify-center gap-2 mt-6" id="hero-slider-dots">
+              <!-- Rendered via JS dynamically -->
+            </div>
+          </div>
+
+          <!-- Fixed Statement Text under the carousel -->
+          <div class="max-w-3xl mx-auto px-4 mt-8">
+            <p 
+              class="text-indigo-200 text-sm sm:text-base md:text-lg font-medium leading-relaxed italic text-center"
+              data-t="carousel_statement"
+            >
+              "Most injuries announce themselves days before they happen. Nobody detects them because there is no daily follow-up."
             </p>
           </div>
         </div>
@@ -515,177 +621,103 @@
       </div>
     </section>
 
-    <!-- Continuous Performance Scale Section -->
-    <section id="is-it-for-you" class="py-24 relative bg-slate-950">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Is it for you Section -->
+    <section id="is-it-for-you" class="py-20 relative bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="mb-16">
+        <div class="mb-12 text-center">
           <h2
-            class="font-outfit text-4xl md:text-5xl lg:text-6xl font-extrabold text-white uppercase tracking-tight mb-6"
+            class="font-outfit text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight mb-4"
             data-t="isforyou_title"
           >
             IS DMOVE FOR YOU?
           </h2>
-          <div class="w-24 h-1.5 bg-indigo-500 rounded-full mb-8"></div>
-          <p
-            class="text-xl text-slate-300 max-w-4xl font-medium leading-relaxed"
-            data-t="isforyou_subtitle"
-          >
-            Descubre si tienes el perfil y el mindset para formar parte de DMoveZone y blindar tu continuidad física.
-          </p>
+          <div class="w-16 h-1 bg-indigo-500 rounded-full mx-auto"></div>
         </div>
-        <!-- Is It For You 2-Column Comparison Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
-          <!-- Column 1: DMove es para ti si... -->
-          <div class="p-8 md:p-10 rounded-3xl border border-emerald-500/20 bg-[#0a1e19]/80 backdrop-blur-xl hover:border-emerald-500/45 transition-all duration-300 relative overflow-hidden group shadow-[0_8px_32px_rgba(16,185,129,0.05)]">
-            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-            
-            <div class="flex items-center gap-4 mb-8">
-              <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <i data-lucide="check-circle" class="w-6 h-6 text-emerald-400"></i>
-              </div>
-              <h3 class="font-outfit text-2xl md:text-3xl font-extrabold text-white tracking-tight" data-t="foryou_yes_title">
-                DMove es para ti si...
-              </h3>
+
+        <!-- Three-column layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <!-- Column 1: Individual Athlete -->
+          <div class="rounded-2xl border border-indigo-500/15 bg-slate-900/40 backdrop-blur-xl p-6 hover:border-indigo-500/35 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-2xl shrink-0">🏀</span>
+              <span class="font-outfit font-extrabold text-indigo-300 uppercase tracking-wider text-xs sm:text-sm" data-t="foryou_col1_title">Individual Athlete</span>
             </div>
-
-            <ul class="space-y-6">
-              <!-- Item 1: Perfil -->
-              <li class="flex gap-4 lg:min-h-[175px]">
-                <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1"></i>
-                <div class="text-slate-300 text-sm md:text-base leading-relaxed font-medium">
-                  <span data-t="foryou_yes_item1"><strong>Tu perfil encaja con nuestra metodología:</strong></span>
-                  <ul class="mt-3 ml-4 space-y-2 border-l border-white/10 pl-4 text-slate-400">
-                    <li class="flex gap-2">
-                      <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
-                      <span data-t="foryou_yes_item1_sub1"><strong>Jugador de Basket:</strong> Que busca el "edge" competitivo.</span>
-                    </li>
-                    <li class="flex gap-2">
-                      <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
-                      <span data-t="foryou_yes_item1_sub_padel"><strong>Jugador de Pádel:</strong> Que busca prevenir lesiones y rendir al máximo.</span>
-                    </li>
-                    <li class="flex gap-2">
-                      <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
-                      <span data-t="foryou_yes_item1_sub2"><strong>Deportista Amateur:</strong> Cansado de lesionarte y entrenar con dolor.</span>
-                    </li>
-                    <li class="flex gap-2">
-                      <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
-                      <span data-t="foryou_yes_item1_sub3"><strong>Adulto Vital:</strong> Quieres evitar la decadencia física y seguir activo.</span>
-                    </li>
-                  </ul>
-                </div>
+            <ul class="space-y-3.5">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col1_item1">Basketball or Padel player seeking an edge</span>
               </li>
-
-              <!-- Item 2 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_yes_item2">
-                  <strong>Buscas continuidad y autonomía.</strong>
-                </span>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col1_item2">Amateur athlete tired of training in pain</span>
               </li>
-
-              <!-- Item 3 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_yes_item3">
-                  <strong>Ves la salud como una inversión.</strong>
-                </span>
-              </li>
-
-              <!-- Item 4 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_yes_item4">
-                  <strong>Valoras tu tiempo.</strong>
-                </span>
-              </li>
-
-              <!-- Item 5 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="check" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_yes_item5">
-                  <strong>Quieres datos reales.</strong>
-                </span>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col1_item3">Adult who wants to stay active without decline</span>
               </li>
             </ul>
           </div>
 
-          <!-- Column 2: DMove NO es para ti si... -->
-          <div class="p-8 md:p-10 rounded-3xl border border-rose-500/20 bg-[#1f0a10]/80 backdrop-blur-xl hover:border-rose-500/45 transition-all duration-300 relative overflow-hidden group shadow-[0_8px_32px_rgba(244,63,94,0.05)]">
-            <div class="absolute inset-0 bg-gradient-to-br from-rose-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-            
-            <div class="flex items-center gap-4 mb-8">
-              <div class="w-12 h-12 bg-rose-500/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                <i data-lucide="x-circle" class="w-6 h-6 text-rose-400"></i>
-              </div>
-              <h3 class="font-outfit text-2xl md:text-3xl font-extrabold text-white tracking-tight" data-t="foryou_no_title">
-                DMove NO es para ti si...
-              </h3>
+          <!-- Column 2: Clubs & Federations -->
+          <div class="rounded-2xl border border-emerald-500/15 bg-slate-900/40 backdrop-blur-xl p-6 hover:border-emerald-500/35 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-2xl shrink-0">🏟️</span>
+              <span class="font-outfit font-extrabold text-emerald-300 uppercase tracking-wider text-xs sm:text-sm" data-t="foryou_col2_title">Clubs & Federations</span>
             </div>
-
-            <ul class="space-y-6">
-              <!-- Item 1: Perfil -->
-              <li class="lg:min-h-[175px] flex flex-col justify-center">
-                <div class="flex gap-4 items-start">
-                  <i data-lucide="x" class="w-5 h-5 text-rose-400 flex-shrink-0 mt-1"></i>
-                  <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_no_item1">
-                    Buscas una solución milagrosa y pasiva sin esfuerzo.
-                  </span>
-                </div>
+            <ul class="space-y-3.5">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col2_item1">You lose key players to injuries every season</span>
               </li>
-
-              <!-- Item 2 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="x" class="w-5 h-5 text-rose-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_no_item2">
-                  <strong>Prefieres la dependencia médica tradicional.</strong>
-                </span>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col2_item2">You have no daily monitoring system for your squad</span>
               </li>
-
-              <!-- Item 3 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="x" class="w-5 h-5 text-rose-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_no_item3">
-                  <strong>Ves la salud como un gasto.</strong>
-                </span>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col2_item3">You want to reduce injury risk without adding complexity</span>
               </li>
+            </ul>
+          </div>
 
-              <!-- Item 4 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="x" class="w-5 h-5 text-rose-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_no_item4">
-                  No te importa perder horas en salas de espera.
-                </span>
+          <!-- Column 3: Companies & Organizations -->
+          <div class="rounded-2xl border border-cyan-500/15 bg-slate-900/40 backdrop-blur-xl p-6 hover:border-cyan-500/35 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-2xl shrink-0">🏢</span>
+              <span class="font-outfit font-extrabold text-cyan-300 uppercase tracking-wider text-xs sm:text-sm" data-t="foryou_col3_title">Companies & Organizations</span>
+            </div>
+            <ul class="space-y-3.5">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col3_item1">MSK disorders are your main cause of sick leave</span>
               </li>
-
-              <!-- Item 5 -->
-              <li class="flex gap-4 border-t border-white/5 pt-6">
-                <i data-lucide="x" class="w-5 h-5 text-rose-400 flex-shrink-0 mt-1"></i>
-                <span class="text-slate-300 text-sm md:text-base leading-relaxed font-medium" data-t="foryou_no_item5">
-                  <strong>Prefieres ignorar lo que realmente pasa en tu cuerpo.</strong>
-                </span>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col3_item2">You want to reduce absenteeism and improve productivity</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0 mt-1.5"></span>
+                <span class="text-slate-200 text-sm font-medium" data-t="foryou_col3_item3">You need a simple system your team will actually use</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Transition to Scale -->
-        <div class="mb-16 border-t border-white/10 pt-16">
-          <h3
-            class="font-outfit text-3xl md:text-4xl font-extrabold text-indigo-400 uppercase tracking-tight mb-4"
-            data-t="scale_transition_title"
+        <!-- Fixed Statement Line -->
+        <div class="text-center max-w-2xl mx-auto mt-8 mb-6">
+          <p 
+            class="text-slate-300 text-sm sm:text-base font-semibold leading-relaxed"
+            data-t="foryou_statement"
           >
-            El Mapa: The Continuous Performance Scale
-          </h3>
-          <p
-            class="text-lg md:text-xl text-slate-300 font-medium leading-relaxed"
-            data-t="scale_transition_desc"
-          >
-            Da igual en qué perfil estés. Tu cuerpo se mueve en este espectro.
+            "Same system. Different context. Same result: fewer injuries, better performance."
           </p>
         </div>
+      </div>
+
         <!-- Spectrum Bar with clean segment interaction -->
-        <div class="relative mb-24 px-1 select-none">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 border-t border-white/10 pt-10">
+        <div class="relative mb-6 px-1 select-none">
           <!-- Sleek title -->
           <div class="text-center mb-6">
             <h4
@@ -709,7 +741,7 @@
                 8 - 10: PEAK PERFORMANCE
               </div>
 
-              <!-- Early Warnings (3-8) Split - Popped out with shadow glow & glass glare -->
+              <!-- Early Warnings (3-8) Split -->
               <div
                 class="w-[50%] flex relative z-20 shadow-[0_0_30px_rgba(99,102,241,0.65)] transform scale-y-[1.15] border-x-2 border-indigo-400/80 bg-slate-900 transition-all duration-300"
               >
@@ -757,7 +789,7 @@
               PERFORMANCE WORLD
             </div>
 
-            <!-- Phase 2 Sub-label (Elevated to Badge with pulsing dot) -->
+            <!-- Phase 2 Sub-label -->
             <div
               onclick="selectSpectrumZone(2)"
               class="w-[50%] border-t-2 border-indigo-500/80 pt-4 px-1 flex flex-col items-center justify-center relative cursor-pointer hover:bg-slate-900/20 transition-all"
@@ -792,10 +824,31 @@
             </div>
           </div>
         </div>
+        </div>
 
-        <!-- Methodology Box below Spectrum Bar -->
+        <!-- See more toggle button -->
+        <div class="text-center mt-8 pb-4">
+          <button
+            id="spectrum-cards-toggle"
+            onclick="toggleSpectrumCards()"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/15 bg-slate-900/50 hover:bg-slate-800/70 hover:border-indigo-500/40 text-slate-300 hover:text-white text-sm font-semibold transition-all duration-200 group"
+          >
+            <span id="spectrum-cards-label" data-t="spectrum_see_more">See more</span>
+            <i id="spectrum-cards-chevron" data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300"></i>
+          </button>
+        </div>
+
+        <!-- Collapsible content (collapsed by default) -->
         <div
-          class="max-w-4xl mx-auto text-center mt-12 bg-slate-900/40 backdrop-blur-xl border border-white/10 p-8 rounded-3xl relative mb-20"
+          id="spectrum-cards-grid"
+          class="overflow-hidden transition-all duration-500 ease-in-out"
+          style="max-height: 0; opacity: 0;"
+        >
+        <div class="pt-8">
+
+        <!-- Methodology Box -->
+        <div
+          class="max-w-4xl mx-auto text-center bg-slate-900/40 backdrop-blur-xl border border-white/10 p-8 rounded-3xl relative mb-10"
         >
           <div
             class="absolute inset-0 bg-gradient-to-tr from-indigo-500/5 via-transparent to-transparent pointer-events-none"
@@ -904,7 +957,7 @@
               0 - 3: Injured
             </p>
           </div>
-        </div>
+          </div>
 
         <!-- Interactive Spectrum Breakdown Panel -->
         <div
@@ -1057,7 +1110,7 @@
               class="w-full lg:w-2/5 aspect-video rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative"
             >
               <img
-                src="/assets/zone2_buffer.png"
+                src="/assets/zone2_buffer.jpg"
                 alt="Daily shield dashboard"
                 class="w-full h-full object-cover opacity-80 animate-fade-in"
               />
@@ -1132,7 +1185,7 @@
               class="w-full lg:w-2/5 aspect-video rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative"
             >
               <img
-                src="/assets/zone3_risk.png"
+                src="/assets/zone3_risk.jpg"
                 alt="Injury risk management"
                 class="w-full h-full object-cover opacity-80 animate-fade-in"
               />
@@ -1266,7 +1319,7 @@
           >
             <div
               class="absolute inset-0 bg-cover bg-center opacity-[0.06] mix-blend-screen group-hover:opacity-[0.16] group-hover:scale-105 transition-all duration-700 pointer-events-none"
-              style="background-image: url(&quot;/assets/roi_injury_bg.png&quot;)"
+              style="background-image: url(&quot;/assets/roi_injury_bg.jpg&quot;)"
             ></div>
             <div
               class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"
@@ -1310,7 +1363,7 @@
           >
             <div
               class="absolute inset-0 bg-cover bg-center opacity-[0.06] mix-blend-screen group-hover:opacity-[0.16] group-hover:scale-105 transition-all duration-700 pointer-events-none"
-              style="background-image: url(&quot;/assets/roi_time_bg.png&quot;)"
+              style="background-image: url(&quot;/assets/roi_time_bg.jpg&quot;)"
             ></div>
             <div
               class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"
@@ -1355,7 +1408,7 @@
             <div
               class="absolute inset-0 bg-cover bg-center opacity-[0.06] mix-blend-screen group-hover:opacity-[0.16] group-hover:scale-105 transition-all duration-700 pointer-events-none"
               style="
-                background-image: url(&quot;/assets/roi_money_bg.png&quot;);
+                background-image: url(&quot;/assets/roi_money_bg.jpg&quot;);
               "
             ></div>
             <div
@@ -1499,7 +1552,7 @@
               class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative"
             >
               <img
-                src="/assets/roi_injury_bg.png"
+                src="/assets/roi_injury_bg.jpg"
                 alt="Body health and longevity"
                 class="w-full h-full object-cover opacity-80 animate-fade-in"
               />
@@ -1588,7 +1641,7 @@
               class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative"
             >
               <img
-                src="/assets/roi_time_bg.png"
+                src="/assets/roi_time_bg.jpg"
                 alt="Time efficiency"
                 class="w-full h-full object-cover opacity-80 animate-fade-in"
               />
@@ -1679,7 +1732,7 @@
               class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative"
             >
               <img
-                src="/assets/roi_money_bg.png"
+                src="/assets/roi_money_bg.jpg"
                 alt="Financial efficiency"
                 class="w-full h-full object-cover opacity-80 animate-fade-in"
               />
@@ -1693,730 +1746,307 @@
       </div>
     </section>
 
-    <!-- The Player Section (Now Zones detailed) -->
-    <section id="player" class="py-24 bg-slate-950">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20">
-          <h2
-            class="font-outfit text-5xl md:text-6xl font-extrabold text-white mb-6 uppercase tracking-tight"
-            data-t="zones_main_title"
-          >
-            What DMove does for you
+    <!-- Unified Pricing & Coverage Section -->
+    <section id="pricing" class="py-24 bg-slate-950 relative overflow-hidden border-t border-white/5">
+      <!-- Glow effects for premium look -->
+      <div class="absolute inset-0 grid-overlay pointer-events-none opacity-40"></div>
+      <div class="glow-orb glow-orb-indigo w-[600px] h-[600px] -left-40 -top-40 opacity-30"></div>
+      <div class="glow-orb glow-orb-emerald w-[500px] h-[500px] -right-20 -bottom-20 opacity-20"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4" data-t="pricing_badge">
+            Pricing & Coverage
+          </div>
+          <h2 class="font-outfit text-3xl md:text-5xl font-extrabold text-white mb-6 uppercase italic tracking-tighter" data-t="new_pricing_title">
+            Become A DMove member
           </h2>
-          <div class="w-24 h-1.5 bg-indigo-500 mx-auto rounded-full mb-8"></div>
+          <p class="text-slate-400 text-lg max-w-3xl mx-auto font-medium" data-t="new_pricing_subtitle">
+            Democratizing elite support with direct Olympic expert guidance and advanced AI health tracking.
+          </p>
         </div>
 
-        <!-- Coverage / Pillar Section -->
-        <div class="mb-24">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Column 1: TESTING DAY (previously Card 4) -->
-            <div
-              id="coverage-card-4"
-              onclick="selectCoverageZone(4)"
-              class="glass p-8 rounded-3xl border border-white/10 bg-slate-900/40 relative overflow-hidden flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-[0_0_50px_rgba(0,0,0,0.3)] cursor-pointer transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <div
-                class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-500/10 to-transparent pointer-events-none rounded-bl-full"
-              ></div>
-              <div>
-                <div
-                  class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 transition-transform"
-                >
-                  <i data-lucide="calendar" class="w-6 h-6"></i>
-                </div>
-                <h4
-                  class="font-outfit text-xl font-extrabold text-white mb-1 uppercase tracking-wider"
-                  data-t="coverage_c4_title"
-                >
-                  TESTING DAY
-                </h4>
-                <span
-                  class="text-sm font-semibold text-amber-500 mb-2 block"
-                  data-t="coverage_c4_subtitle"
-                  >¿Quieres calibrar tu cuerpo?</span
-                >
-              </div>
-              <div
-                class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-amber-400 transition-colors"
-              >
-                <span data-t="roi_expand_hint">Click to see details</span>
-                <i
-                  data-lucide="chevron-right"
-                  class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                ></i>
-              </div>
+        <!-- Featured Member Plan (Full-Width) -->
+        <div class="max-w-4xl mx-auto mb-12">
+          <div class="flex flex-col bg-gradient-to-b from-indigo-950/90 to-slate-900/95 backdrop-blur-xl border-2 border-indigo-500 hover:border-indigo-400 rounded-3xl p-8 md:p-12 transition-all duration-500 relative group overflow-hidden ring-4 ring-indigo-500/20 shadow-[0_0_80px_rgba(99,102,241,0.3)]">
+            <div class="absolute top-0 right-0 bg-gradient-to-r from-indigo-500 to-violet-500 text-white text-xs font-black uppercase tracking-widest px-6 py-2 rounded-bl-3xl font-outfit shadow-lg" data-t="pricing_indiv_tag">
+              ★ Active Prevention Shield
             </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-indigo-500/10 via-indigo-500/5 to-transparent opacity-100 transition-opacity duration-500"></div>
 
-            <!-- Column 2: THE CORE (Monitoring APP) -->
-            <div
-              id="coverage-card-1"
-              onclick="selectCoverageZone(1)"
-              class="glass p-8 rounded-3xl border border-white/10 bg-slate-900/40 relative overflow-hidden flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-[0_0_50px_rgba(0,0,0,0.3)] cursor-pointer transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <div
-                class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-500/10 to-transparent pointer-events-none rounded-bl-full"
-              ></div>
-              <div>
-                <div
-                  class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 transition-transform"
-                >
-                  <i data-lucide="activity" class="w-6 h-6"></i>
-                </div>
-                <h4
-                  class="font-outfit text-xl font-extrabold text-white mb-1 uppercase tracking-wider"
-                  data-t="coverage_c1_title"
-                >
-                  Monitoring APP
-                </h4>
-                <span
-                  class="text-sm font-semibold text-amber-500 mb-2 block"
-                  data-t="coverage_c1_subtitle"
-                  >¿Cómo estás y cómo evolucionas?</span
-                >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 relative z-10 items-center">
+              <div class="md:col-span-7 text-left">
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-indigo-300 px-3 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-500/40 mb-6">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                  <span data-t="pricing_indiv_badge">DMove Member</span>
+                </span>
+                <h3 class="font-outfit text-3xl md:text-4xl font-black text-white uppercase italic tracking-tight" data-t="pricing_indiv_title">Become a Dmove member</h3>
+                <p class="text-slate-300 text-sm md:text-base mt-4 font-medium leading-relaxed" data-t="pricing_indiv_desc_quote">
+                  "As a DMove member, you get what elite athletes have always had — daily monitoring, expert guidance, and a network that keeps you performing at your best. Now available for everyone."
+                </p>
+                <ul class="space-y-3.5 mt-8">
+                  <li class="flex items-center gap-3">
+                    <i data-lucide="message-circle" class="w-5 h-5 text-indigo-400 shrink-0"></i>
+                    <span class="text-slate-200 text-sm font-semibold" data-t="pricing_indiv_f1"><strong class="text-indigo-300">Direct Chat:</strong> Private priority line to David (Olympic Traumatology & Sports Physio).</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <i data-lucide="smartphone" class="w-5 h-5 text-indigo-400 shrink-0"></i>
+                    <span class="text-slate-200 text-sm font-semibold" data-t="pricing_indiv_f2"><strong class="text-indigo-300">App Premium:</strong> Biomechanical dashboard, symptoms radar &amp; academy.</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <i data-lucide="network" class="w-5 h-5 text-indigo-400 shrink-0"></i>
+                    <span class="text-slate-200 text-sm font-semibold" data-t="pricing_indiv_f3"><strong class="text-indigo-300">HUB Privileges:</strong> Instant scheduling with elite Swiss/Spanish specialists and recovery product discounts.</span>
+                  </li>
+                </ul>
               </div>
-              <div
-                class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-amber-400 transition-colors"
-              >
-                <span data-t="roi_expand_hint">Click to see details</span>
-                <i
-                  data-lucide="chevron-right"
-                  class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                ></i>
-              </div>
-            </div>
 
-            <!-- Column 3: THE HUMAN GUIDE -->
-            <div
-              id="coverage-card-2"
-              onclick="selectCoverageZone(2)"
-              class="glass p-8 rounded-3xl border border-white/10 bg-slate-900/40 relative overflow-hidden flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-[0_0_50px_rgba(0,0,0,0.3)] cursor-pointer transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <div
-                class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-500/10 to-transparent pointer-events-none rounded-bl-full"
-              ></div>
-              <div>
-                <div
-                  class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 transition-transform"
-                >
-                  <i data-lucide="message-square" class="w-6 h-6"></i>
+              <div class="md:col-span-5 flex flex-col items-center md:items-end justify-center text-center md:text-right border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-8">
+                <div class="mb-4">
+                  <span class="text-xs uppercase font-bold tracking-widest text-slate-400 block mb-1" data-t="pricing_indiv_offer_label">Special Offer Now</span>
+                  <div class="flex items-baseline justify-center md:justify-end gap-1.5">
+                    <span class="text-6xl md:text-7xl font-black text-indigo-300 font-outfit">99</span>
+                    <span class="text-2xl font-bold text-indigo-400 font-outfit">CHF</span>
+                  </div>
+                  <p class="text-slate-400 text-xs font-semibold mt-1" data-t="pricing_indiv_unit">/ year · <span class="line-through text-slate-500">299 CHF/year</span></p>
                 </div>
-                <h4
-                  class="font-outfit text-xl font-extrabold text-white mb-1 uppercase tracking-wider"
-                  data-t="coverage_c2_title"
-                >
-                  THE HUMAN GUIDE
-                </h4>
-                <span
-                  class="text-sm font-semibold text-amber-500 mb-2 block"
-                  data-t="coverage_c2_subtitle"
-                  >¿Qué haces si dudas?</span
-                >
-              </div>
-              <div
-                class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-amber-400 transition-colors"
-              >
-                <span data-t="roi_expand_hint">Click to see details</span>
-                <i
-                  data-lucide="chevron-right"
-                  class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Column 4: DMOVE HUB -->
-            <div
-              id="coverage-card-3"
-              onclick="selectCoverageZone(3)"
-              class="glass p-8 rounded-3xl border border-white/10 bg-slate-900/40 relative overflow-hidden flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-[0_0_50px_rgba(0,0,0,0.3)] cursor-pointer transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <div
-                class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-500/10 to-transparent pointer-events-none rounded-bl-full"
-              ></div>
-              <div>
-                <div
-                  class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 transition-transform"
-                >
-                  <i data-lucide="network" class="w-6 h-6"></i>
-                </div>
-                <h4
-                  class="font-outfit text-xl font-extrabold text-white mb-1 uppercase tracking-wider"
-                  data-t="coverage_c3_title"
-                >
-                  DMOVE HUB
-                </h4>
-                <span
-                  class="text-sm font-semibold text-amber-500 mb-2 block"
-                  data-t="coverage_c3_subtitle"
-                  >¿Qué pasa si te rompes?</span
-                >
-              </div>
-              <div
-                class="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-amber-400 transition-colors"
-              >
-                <span data-t="roi_expand_hint">Click to see details</span>
-                <i
-                  data-lucide="chevron-right"
-                  class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                ></i>
+                <a href="https://buy.stripe.com/cNi14o1A6b56d765Mr6AM03" target="_blank" class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-black text-center rounded-xl transition-all uppercase tracking-widest text-sm flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/50 hover:scale-[1.02] active:scale-[0.98] duration-200" data-t="pricing_individual_cta">
+                  Join Now &amp; Activate Passport <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="text-center mt-12 mb-6 flex flex-col items-center">
-            <h3
-              class="font-outfit text-2xl md:text-3xl font-extrabold text-white mb-3"
-              data-t="coverage_main_title"
-            >
-              Tu seguro de continuidad por menos de 1 CHF al día
-            </h3>
-            <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full mb-6"></div>
-            <a
-              href="#pricing"
-              class="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transform hover:scale-105 active:scale-95 text-xs uppercase tracking-wider group"
-            >
-              <span data-t="coverage_prices_cta_text">See prices</span>
-              <i
-                data-lucide="arrow-right"
-                class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-              ></i>
+        <!-- Secondary Plans: Sport Club & Corporate (Side by Side) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-5xl mx-auto items-stretch">
+          <!-- Card 2: Pack Basket Clubs (ORANGE) -->
+          <div class="flex flex-col bg-slate-900/40 backdrop-blur-xl border border-orange-500/20 hover:border-orange-500/40 rounded-3xl p-8 transition-all duration-500 relative group overflow-hidden shadow-lg">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-100"></div>
+            <div class="mb-6 relative z-10">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-orange-400 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20">
+                <i data-lucide="users" class="w-3.5 h-3.5"></i>
+                <span data-t="pricing_team_badge_new">Pack Basket Clubs</span>
+              </span>
+              <h3 class="font-outfit text-2xl font-bold text-white mt-5 uppercase italic tracking-tight" data-t="pricing_team_title_new">BASKET CLUBS</h3>
+              <p class="text-slate-400 text-sm mt-2 font-medium" data-t="pricing_team_desc_new">Collective monitoring and load-management for squads & teams.</p>
+            </div>
+            
+            <div class="flex items-baseline gap-1 mb-2 relative z-10">
+              <span class="text-4xl md:text-5xl font-black text-orange-300 font-outfit">99</span>
+              <span class="text-xl font-bold text-orange-400 font-outfit">CHF</span>
+            </div>
+            <p class="text-orange-400/70 text-xs font-medium mb-8 relative z-10" data-t="pricing_team_unit_new">/ player / season</p>
+
+            <ul class="space-y-3 mb-8 relative z-10 flex-grow">
+              <li class="flex items-start gap-3 py-1.5 border-b border-orange-500/10">
+                <i data-lucide="check" class="w-4 h-4 text-orange-400 shrink-0 mt-0.5"></i>
+                <span class="text-slate-300 text-sm font-medium" data-t="pricing_team_f1_new">Daily radar monitoring for up to 15+ athletes.</span>
+              </li>
+              <li class="flex items-start gap-3 py-1.5 border-b border-orange-500/10">
+                <i data-lucide="calendar" class="w-4 h-4 text-orange-400 shrink-0 mt-0.5"></i>
+                <span class="text-slate-300 text-sm font-medium" data-t="pricing_team_f2_new"><strong>Testing Day included:</strong> Full squad mechanical calibration.</span>
+              </li>
+            </ul>
+
+            <a href="mailto:david@dmovezone.com?subject=Basket%20Club%20Inquiry" class="w-full py-3 bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/30 text-orange-300 font-bold text-center rounded-xl transition-all uppercase tracking-wider text-xs flex items-center justify-center gap-2 mt-auto relative z-10" data-t="pricing_team_cta">
+              <i data-lucide="mail" class="w-4 h-4"></i> Contact for more info
             </a>
           </div>
 
-          <!-- Interactive Coverage Breakdown Panel -->
-          <div
-            id="coverage-breakdown-container"
-            class="mt-12 bg-slate-900/60 backdrop-blur-xl border border-amber-500/20 rounded-3xl p-8 md:p-12 shadow-[0_0_50px_rgba(245,158,11,0.1)] relative overflow-hidden transition-all duration-500 hidden"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-tr from-amber-500/5 via-transparent to-transparent pointer-events-none"
-            ></div>
-
-            <!-- Coverage Zone 1: Monitoring APP -->
-            <div
-              id="coverage-content-1"
-              class="hidden transition-opacity duration-300 opacity-0 flex flex-col lg:flex-row gap-8 items-center"
-            >
-              <div class="w-full lg:w-3/5 text-left">
-                <div class="flex items-center gap-3 mb-3">
-                  <div class="w-1.5 h-6 bg-amber-400"></div>
-                  <h5
-                    class="font-outfit text-sm md:text-base font-bold text-amber-400 tracking-wider uppercase"
-                    data-t="coverage_c1_title"
-                  >
-                    Monitoring APP
-                  </h5>
-                </div>
-                <h4
-                  class="font-outfit text-2xl md:text-3xl font-extrabold text-white mb-4"
-                  data-t="coverage_c1_subtitle"
-                >
-                  ¿Cómo estás y cómo evolucionas?
-                </h4>
-
-                <div class="space-y-5 mb-6">
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="smartphone"
-                        class="w-4 h-4 text-amber-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c1_item1"
-                    >
-                      <strong>Radar App:</strong> Mide y potencia tu
-                      rendimiento, tu estilo de vida (mente, recuperación y
-                      carga) y los síntomas de tu cuerpo.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="book-open"
-                        class="w-4 h-4 text-amber-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c1_item2"
-                    >
-                      <strong>Academy:</strong> Aprende sobre tu cuerpo y sigue todos los programas para potenciar tu físico.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="shield-check"
-                        class="w-4 h-4 text-emerald-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c1_item3"
-                    >
-                      <strong>Control:</strong> Toma el control de tu cuerpo de
-                      forma activa.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="border-t border-white/5 pt-5 mb-6">
-                  <p
-                    class="text-xs md:text-sm italic text-amber-300 font-semibold leading-relaxed"
-                    data-t="coverage_c1_offer"
-                  >
-                    ● "OFFER: Free with Annual Plan (Save 150 CHF). Eliminate
-                    daily uncertainty instantly."
-                  </p>
-                </div>
-
-                <a
-                  href="https://app.dmovezone.com"
-                  target="_blank"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-sm uppercase tracking-wider transition-all cursor-pointer shadow-lg shadow-indigo-600/30"
-                >
-                  <i data-lucide="smartphone" class="w-4 h-4"></i>
-                  <span data-t="coverage_c1_cta">Acceder a la App</span>
-                </a>
-              </div>
-              <div
-                class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center opacity-65"
-                  style="
-                    background-image: url(&quot;/assets/basketball_glow_bg.png&quot;);
-                  "
-                ></div>
-                <div class="relative z-10 p-6 text-center">
-                  <i
-                    data-lucide="smartphone"
-                    class="w-16 h-16 text-indigo-400 mx-auto mb-4 animate-pulse"
-                  ></i>
-                  <div
-                    class="font-outfit font-extrabold text-white text-lg mb-1"
-                  >
-                    DMove Radar Active
-                  </div>
-                  <div class="text-xs text-slate-400">
-                    Seamless daily logs & biomechanics analytics
-                  </div>
-                </div>
-                <div
-                  class="absolute inset-0 bg-indigo-500/5 mix-blend-overlay pointer-events-none"
-                ></div>
-              </div>
+          <!-- Card 3: Pack Corporate (CYAN) -->
+          <div class="flex flex-col bg-slate-900/40 backdrop-blur-xl border border-cyan-500/20 hover:border-cyan-500/40 rounded-3xl p-8 transition-all duration-500 relative group overflow-hidden shadow-lg">
+            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-100"></div>
+            <div class="mb-6 relative z-10">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-cyan-400 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20">
+                <i data-lucide="building" class="w-3.5 h-3.5"></i>
+                <span data-t="pricing_corp_badge">Pack Corporate</span>
+              </span>
+              <h3 class="font-outfit text-2xl font-bold text-white mt-5 uppercase italic tracking-tight" data-t="pricing_corp_title">CORPORATE</h3>
+              <p class="text-slate-400 text-sm mt-2 font-medium" data-t="pricing_corp_desc">Reduce MSK absenteeism and boost overall productivity.</p>
             </div>
-
-            <!-- Coverage Zone 2: THE HUMAN GUIDE -->
-            <div
-              id="coverage-content-2"
-              class="hidden transition-opacity duration-300 opacity-0 flex flex-col lg:flex-row gap-8 items-center"
-            >
-              <div class="w-full lg:w-3/5 text-left">
-                <div class="flex items-center gap-3 mb-3">
-                  <div class="w-1.5 h-6 bg-amber-400"></div>
-                  <h5
-                    class="font-outfit text-sm md:text-base font-bold text-amber-400 tracking-wider uppercase"
-                    data-t="coverage_c2_title"
-                  >
-                    THE HUMAN GUIDE
-                  </h5>
-                </div>
-                <h4
-                  class="font-outfit text-2xl md:text-3xl font-extrabold text-white mb-4"
-                  data-t="coverage_c2_subtitle"
-                >
-                  ¿Qué haces si dudas?
-                </h4>
-
-                <div class="space-y-5 mb-6">
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="sparkles"
-                        class="w-4 h-4 text-amber-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c2_item1"
-                    >
-                      <strong>Health Manager:</strong> Chat directo con David
-                      (Fisio Olímpico) para resolver cualquier duda mecánica en
-                      segundos.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="compass"
-                        class="w-4 h-4 text-amber-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c2_item2"
-                    >
-                      <strong>Navegación del Desierto (3-8):</strong> El experto
-                      que te dice exactamente qué hacer para que ese "pinchazo"
-                      del 6 vuelva al 8 y no caiga al abismo del 3.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="brain"
-                        class="w-4 h-4 text-emerald-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c2_item3"
-                    >
-                      <strong>Comprensión:</strong> Empieza a entender qué
-                      ocurre en tu cuerpo.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="border-t border-white/5 pt-5 mb-6">
-                  <p
-                    class="text-xs md:text-sm italic text-amber-300 font-semibold leading-relaxed"
-                    data-t="coverage_c2_desc"
-                  >
-                    ● "Overcome the isolation of pain. When physical discomfort
-                    appears, get elite clinical answers instantly."
-                  </p>
-                </div>
-
-                <a
-                  href="https://wa.me/410766732559"
-                  target="_blank"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-sm uppercase tracking-wider transition-all cursor-pointer shadow-lg shadow-emerald-600/30"
-                >
-                  <i data-lucide="message-circle" class="w-4 h-4"></i>
-                  <span data-t="coverage_c2_cta">Contactar por WhatsApp</span>
-                </a>
-              </div>
-              <div
-                class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 flex items-center justify-center relative shadow-[0_0_30px_rgba(16,185,129,0.1)]"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-500 hover:scale-105"
-                  style="
-                    background-image: url(&quot;/assets/olympic_david.png&quot;);
-                  "
-                ></div>
-                <div
-                  class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-4 z-10 text-left"
-                >
-                  <div
-                    class="font-outfit font-extrabold text-white text-sm tracking-wide"
-                  >
-                    David Martín
-                  </div>
-                  <div
-                    class="text-[10px] text-emerald-400 font-semibold uppercase tracking-wider"
-                  >
-                    Olympic Physiotherapist
-                  </div>
-                </div>
-                <div
-                  class="absolute inset-0 bg-emerald-500/5 mix-blend-overlay pointer-events-none"
-                ></div>
-              </div>
+            
+            <div class="flex items-baseline gap-1 mb-2 relative z-10">
+              <span class="text-4xl md:text-5xl font-black text-cyan-300 font-outfit">Contact</span>
             </div>
+            <p class="text-cyan-400/70 text-xs font-medium mb-8 relative z-10" data-t="pricing_corp_unit">Custom plans for teams of any size</p>
 
-            <!-- Coverage Zone 3: DMOVE HUB -->
-            <div
-              id="coverage-content-3"
-              class="hidden transition-opacity duration-300 opacity-0 flex flex-col lg:flex-row gap-8 items-center"
-            >
-              <div class="w-full lg:w-3/5 text-left">
-                <div class="flex items-center gap-3 mb-3">
-                  <div class="w-1.5 h-6 bg-amber-400"></div>
-                  <h5
-                    class="font-outfit text-sm md:text-base font-bold text-amber-400 tracking-wider uppercase"
-                    data-t="coverage_c3_title"
-                  >
-                    DMOVE HUB
-                  </h5>
-                </div>
-                <h4
-                  class="font-outfit text-2xl md:text-3xl font-extrabold text-white mb-4"
-                  data-t="coverage_c3_subtitle"
-                >
-                  ¿Qué pasa si te rompes?
-                </h4>
+            <ul class="space-y-3 mb-8 relative z-10 flex-grow">
+              <li class="flex items-start gap-3 py-1.5 border-b border-cyan-500/10">
+                <i data-lucide="check" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                <span class="text-slate-300 text-sm font-medium" data-t="pricing_corp_f1">Health Passport integration to monitor desk posture & fatigue.</span>
+              </li>
+              <li class="flex items-start gap-3 py-1.5 border-b border-cyan-500/10">
+                <i data-lucide="trending-up" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                <span class="text-slate-300 text-sm font-medium" data-t="pricing_corp_f2">Concrete reduction in sick leave and physical decline.</span>
+              </li>
+            </ul>
 
-                <div class="space-y-5 mb-6">
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="shield-alert"
-                        class="w-4 h-4 text-amber-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c3_item1"
-                    >
-                      <strong>Athlete Passport:</strong> Tu historial
-                      clínico-deportivo digitalizado y listo para que cualquier
-                      médico actúe con precisión quirúrgica, sin pruebas
-                      innecesarias.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i data-lucide="users" class="w-4 h-4 text-amber-400"></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c3_item2"
-                    >
-                      <strong>DMove HUB:</strong> Conexión preferente con
-                      especialistas de élite y partners tecnológicos en Suiza y
-                      España. Blindaje financiero y clínico total.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="trending-up"
-                        class="w-4 h-4 text-emerald-400"
-                      ></i>
-                    </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="coverage_c3_item3"
-                    >
-                      <strong>Recuperación Acelerada:</strong> Vuelve al juego
-                      un 30% antes y en mejores condiciones clínicas.
-                    </p>
-                  </div>
-                </div>
+            <a href="mailto:david@dmovezone.com?subject=Corporate%20Inquiry" class="w-full py-3 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 font-bold text-center rounded-xl transition-all uppercase tracking-wider text-xs flex items-center justify-center gap-2 mt-auto relative z-10" data-t="pricing_corp_cta">
+              <i data-lucide="mail" class="w-4 h-4"></i> Contact for more info
+            </a>
+          </div>
+        </div>
 
-                <div class="border-t border-white/5 pt-5 mb-6">
-                  <p
-                    class="text-xs md:text-sm italic text-amber-300 font-semibold leading-relaxed"
-                    data-t="coverage_c3_desc"
-                  >
-                    ● "We streamline medical chaos. If risk becomes reality, we
-                    activate our network to accelerate your return."
-                  </p>
-                </div>
-
-                <a
-                  href="https://app.dmovezone.com"
-                  target="_blank"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-sm uppercase tracking-wider transition-all cursor-pointer shadow-lg shadow-indigo-600/30"
-                >
-                  <i data-lucide="activity" class="w-4 h-4"></i>
-                  <span data-t="coverage_c3_cta">Activar DMove HUB</span>
-                </a>
-              </div>
-              <!-- 4 Pillars Grid mirroring uploaded design -->
-              <div
-                class="w-full lg:w-2/5 rounded-3xl bg-slate-950/40 border border-white/10 p-6 flex flex-col justify-between self-stretch min-h-[300px]"
-              >
-                <div>
-                  <span
-                    class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-6 text-left"
-                    >DMOVE HUB</span
-                  >
-                  <div class="grid grid-cols-2 gap-4">
-                    <!-- Professionals -->
-                    <div
-                      class="flex flex-col items-center justify-center bg-slate-900/50 hover:bg-slate-900/80 border border-white/5 hover:border-amber-500/30 rounded-2xl p-4 transition-all duration-300 group/hub cursor-pointer"
-                    >
-                      <div
-                        class="w-12 h-12 rounded-2xl bg-slate-800/80 border border-white/10 flex items-center justify-center text-slate-300 group-hover/hub:text-amber-400 group-hover/hub:border-amber-500/30 transition-all mb-3 shadow-inner"
-                      >
-                        <i data-lucide="stethoscope" class="w-6 h-6"></i>
-                      </div>
-                      <span
-                        class="text-[10px] md:text-xs font-bold text-slate-400 tracking-wider uppercase group-hover/hub:text-white transition-colors text-center"
-                        data-t="hub_professionals"
-                        >Professionals</span
-                      >
-                    </div>
-                    <!-- Partners -->
-                    <div
-                      class="flex flex-col items-center justify-center bg-slate-900/50 hover:bg-slate-900/80 border border-white/5 hover:border-amber-500/30 rounded-2xl p-4 transition-all duration-300 group/hub cursor-pointer"
-                    >
-                      <div
-                        class="w-12 h-12 rounded-2xl bg-slate-800/80 border border-white/10 flex items-center justify-center text-slate-300 group-hover/hub:text-amber-400 group-hover/hub:border-amber-500/30 transition-all mb-3 shadow-inner"
-                      >
-                        <i data-lucide="handshake" class="w-6 h-6"></i>
-                      </div>
-                      <span
-                        class="text-[10px] md:text-xs font-bold text-slate-400 tracking-wider uppercase group-hover/hub:text-white transition-colors text-center"
-                        data-t="hub_partners"
-                        >Partners</span
-                      >
-                    </div>
-                    <!-- Academy -->
-                    <div
-                      class="flex flex-col items-center justify-center bg-slate-900/50 hover:bg-slate-900/80 border border-white/5 hover:border-amber-500/30 rounded-2xl p-4 transition-all duration-300 group/hub cursor-pointer"
-                    >
-                      <div
-                        class="w-12 h-12 rounded-2xl bg-slate-800/80 border border-white/10 flex items-center justify-center text-slate-300 group-hover/hub:text-amber-400 group-hover/hub:border-amber-500/30 transition-all mb-3 shadow-inner"
-                      >
-                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
-                      </div>
-                      <span
-                        class="text-[10px] md:text-xs font-bold text-slate-400 tracking-wider uppercase group-hover/hub:text-white transition-colors text-center"
-                        data-t="hub_academy"
-                        >Academy</span
-                      >
-                    </div>
-                    <!-- Ambassadors -->
-                    <div
-                      class="flex flex-col items-center justify-center bg-slate-900/50 hover:bg-slate-900/80 border border-white/5 hover:border-amber-500/30 rounded-2xl p-4 transition-all duration-300 group/hub cursor-pointer"
-                    >
-                      <div
-                        class="w-12 h-12 rounded-2xl bg-slate-800/80 border border-white/10 flex items-center justify-center text-slate-300 group-hover/hub:text-amber-400 group-hover/hub:border-amber-500/30 transition-all mb-3 shadow-inner"
-                      >
-                        <i data-lucide="trophy" class="w-6 h-6"></i>
-                      </div>
-                      <span
-                        class="text-[10px] md:text-xs font-bold text-slate-400 tracking-wider uppercase group-hover/hub:text-white transition-colors text-center"
-                        data-t="hub_ambassadors"
-                        >Ambassadors</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Upsells Banner -->
+        <div class="bg-slate-900/40 backdrop-blur-xl border border-amber-500/15 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-amber-500/8 via-transparent to-transparent"></div>
+          <div class="absolute -bottom-10 -right-10 w-48 h-48 rounded-full bg-amber-500/5 blur-3xl"></div>
+          
+          <div class="relative z-10">
+            <div class="flex items-center gap-3 mb-8">
+              <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/25">
+                <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+                Add-ons
+              </span>
+              <h3 class="font-outfit text-2xl font-extrabold text-white uppercase italic tracking-tight" data-t="upsells_title">
+                UPSELLS
+              </h3>
             </div>
-
-            <!-- Coverage Zone 4: Testing Day -->
-            <div
-              id="coverage-content-4"
-              class="hidden transition-opacity duration-300 opacity-0 flex flex-col lg:flex-row gap-8 items-center"
-            >
-              <div class="w-full lg:w-3/5 text-left">
-                <div class="flex items-center gap-3 mb-3">
-                  <div class="w-1.5 h-6 bg-amber-400"></div>
-                  <h5
-                    class="font-outfit text-sm md:text-base font-bold text-amber-400 tracking-wider uppercase"
-                    data-t="zone_1_badge"
-                  >
-                    TESTING DAY
-                  </h5>
-                </div>
-                <h4
-                  class="font-outfit text-2xl md:text-3xl font-extrabold text-white mb-4"
-                  data-t="zone_1_title"
-                >
-                  DMove Testing Day
-                </h4>
-
-                <div class="space-y-5 mb-6">
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <!-- Upsell 1: Testing Day -->
+              <div class="bg-slate-950/50 border border-amber-500/15 hover:border-amber-500/30 rounded-2xl transition-all duration-300 group overflow-hidden flex flex-col justify-between">
+                <div class="p-5 flex flex-col">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/20 text-amber-400 shrink-0">
+                      <i data-lucide="calendar" class="w-4 h-4"></i>
                     </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="zone_1_bullet_1"
-                    >
-                      <strong>Perfil Personalizado:</strong> Evalúa tu capacidad de fuerza, movilidad, balance, salto, velocidad, cardio u otros pilares adaptados a tu perfil y deporte.
-                    </p>
+                    <h4 class="font-outfit text-base font-bold text-white uppercase italic tracking-tight" data-t="upsell_testing_title">Testing Day</h4>
                   </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                  <div class="mb-4" data-t="upsell_testing_price_details">
+                    <div class="flex items-baseline gap-1 mb-1">
+                      <span class="text-2xl font-black text-white font-outfit">150</span>
+                      <span class="text-slate-400 text-xs font-semibold">CHF</span>
                     </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="zone_1_bullet_2"
-                    >
-                      <strong>Dos Opciones de Test:</strong> Opción rápida en 10 minutos para hacerla tú solo desde la app, u opción Pro con un profesional para un análisis detallado.
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div
-                      class="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 border border-amber-500/20"
-                    >
-                      <i
-                        data-lucide="check"
-                        class="w-4 h-4 text-emerald-400"
-                      ></i>
+                    <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-[10px] w-full">
+                      <span class="text-slate-300 font-semibold"><strong class="text-indigo-300">50% Members:</strong> 75 CHF</span>
                     </div>
-                    <p
-                      class="text-sm md:text-base text-slate-300 leading-relaxed font-medium"
-                      data-t="zone_1_bullet_3"
-                    >
-                      <strong>Acceso Exclusivo:</strong> Testing Day presencial incluido para equipos y descuento especial para miembros individuales (99 CHF en vez de 199 CHF).
-                    </p>
                   </div>
                 </div>
-
-                <div class="border-t border-white/5 pt-5 mb-6">
-                  <p
-                    class="text-xs md:text-sm italic text-amber-300 font-semibold leading-relaxed"
-                    data-t="zone_1_desc"
-                  >
-                    La auditoría de tu cuerpo. Evalúa tu punto de partida físico para entrenar sin dolor y optimizar tu rendimiento de forma segura.
-                  </p>
+                <!-- Button -->
+                <div class="p-5 pt-0">
+                  <a href="https://buy.stripe.com/5kQ00k92y8WYc327Uz6AM06" target="_blank" class="w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-center rounded-lg transition-all uppercase tracking-wider text-[10px] flex items-center justify-center gap-1 shadow-md shadow-amber-500/10 relative z-10" data-t="upsell_testing_cta">
+                    Book Testing Day <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </a>
                 </div>
-
-                <a
-                  href="https://wa.me/410766732559"
-                  target="_blank"
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl text-sm uppercase tracking-wider transition-all cursor-pointer shadow-lg shadow-amber-500/30"
-                >
-                  <i data-lucide="calendar" class="w-4 h-4"></i>
-                  <span data-t="zone_1_cta">Hacer mi check-up</span>
-                </a>
               </div>
-              <div
-                class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950/50 border border-white/10 relative flex items-center justify-center"
-              >
-                <video
-                  src="/assets/zone1_peak.mp4"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  class="absolute inset-0 w-full h-full object-cover opacity-60 scale-105"
-                ></video>
-                <div
-                  class="absolute inset-0 bg-amber-400/10 mix-blend-overlay pointer-events-none"
-                ></div>
+
+              <!-- Upsell 2: Call with David -->
+              <div class="bg-slate-950/50 border border-amber-500/15 hover:border-amber-500/30 rounded-2xl transition-all duration-300 group overflow-hidden flex flex-col justify-between">
+                <div class="p-5 flex flex-col">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/20 text-amber-400 shrink-0">
+                      <i data-lucide="video" class="w-4 h-4"></i>
+                    </div>
+                    <h4 class="font-outfit text-base font-bold text-white uppercase italic tracking-tight" data-t="upsell_call_title">Call with David</h4>
+                  </div>
+                  <div class="mb-4" data-t="upsell_call_price_details">
+                    <div class="flex items-baseline gap-1 mb-1">
+                      <span class="text-2xl font-black text-white font-outfit">99</span>
+                      <span class="text-slate-400 text-xs font-semibold">CHF</span>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-[10px] w-full">
+                      <span class="text-slate-300 font-semibold"><strong class="text-indigo-300">50% Members:</strong> 50 CHF</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="p-5 pt-0">
+                  <a href="https://buy.stripe.com/3cI14oemSa121oo7Uz6AM05" target="_blank" class="w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-center rounded-lg transition-all uppercase tracking-wider text-[10px] flex items-center justify-center gap-1 shadow-md shadow-amber-500/10 relative z-10" data-t="upsell_call_cta">
+                    Book Call <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
               </div>
+
+              <!-- Upsell 3: Specialist Sessions in Person -->
+              <div class="bg-slate-950/50 border border-amber-500/15 hover:border-amber-500/30 rounded-2xl transition-all duration-300 group overflow-hidden flex flex-col justify-between">
+                <div class="p-5 flex flex-col">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/20 text-amber-400 shrink-0">
+                      <i data-lucide="user-check" class="w-4 h-4"></i>
+                    </div>
+                    <h4 class="font-outfit text-base font-bold text-white uppercase italic tracking-tight" data-t="upsell_specialist_title">Specialist Sessions</h4>
+                  </div>
+                  
+                  <!-- Member benefits description -->
+                  <div class="mb-4">
+                    <div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-[10px] w-full">
+                      <span class="text-slate-300 font-semibold" data-t="upsell_specialist_benefit"><strong class="text-indigo-300">DMove Members:</strong> Priority &amp; Partner Rates</span>
+                    </div>
+                  </div>
+
+                  <!-- 4 Blocks for Specialists -->
+                  <div class="grid grid-cols-2 gap-2 mb-4">
+                    <div class="p-2 bg-slate-900/80 rounded-xl border border-white/5 text-center">
+                      <span class="text-lg block mb-0.5">🩺</span>
+                      <span class="text-[9px] uppercase tracking-wider text-slate-300 font-bold block" data-t="upsell_spec_doc">Doctor</span>
+                    </div>
+                    <div class="p-2 bg-slate-900/80 rounded-xl border border-white/5 text-center">
+                      <span class="text-lg block mb-0.5">🩹</span>
+                      <span class="text-[9px] uppercase tracking-wider text-slate-300 font-bold block" data-t="upsell_spec_physio">Physio</span>
+                    </div>
+                    <div class="p-2 bg-slate-900/80 rounded-xl border border-white/5 text-center">
+                      <span class="text-lg block mb-0.5">🥗</span>
+                      <span class="text-[9px] uppercase tracking-wider text-slate-300 font-bold block" data-t="upsell_spec_nutri">Nutritionist</span>
+                    </div>
+                    <div class="p-2 bg-slate-900/80 rounded-xl border border-white/5 text-center">
+                      <span class="text-lg block mb-0.5">💪</span>
+                      <span class="text-[9px] uppercase tracking-wider text-slate-300 font-bold block" data-t="upsell_spec_trainer">Trainer</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="p-5 pt-0">
+                  <a href="https://app.dmovezone.com" target="_blank" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-white/10 font-bold text-center rounded-lg transition-all uppercase tracking-wider text-[10px] flex items-center justify-center gap-1 relative z-10" data-t="upsell_specialist_cta_new">
+                    See more in the App <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Upsell 4: Recovery Products -->
+              <div class="bg-slate-950/50 border border-amber-500/15 hover:border-amber-500/30 rounded-2xl transition-all duration-300 group overflow-hidden flex flex-col justify-between">
+                <div class="p-5 flex flex-col">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/20 text-amber-400 shrink-0">
+                      <i data-lucide="package" class="w-4 h-4"></i>
+                    </div>
+                    <h4 class="font-outfit text-base font-bold text-white uppercase italic tracking-tight" data-t="upsell_recovery_title">Recovery Products</h4>
+                  </div>
+                  
+                  <!-- Member benefits description -->
+                  <div class="mb-4">
+                    <div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-[10px] w-full">
+                      <span class="text-slate-300 font-semibold" data-t="upsell_recovery_benefit"><strong class="text-indigo-300">DMove Members:</strong> Exclusive Partner Pricing</span>
+                    </div>
+                  </div>
+
+                  <!-- Two-photo thumbnail gallery -->
+                  <div class="grid grid-cols-2 gap-2 mb-4 shrink-0">
+                    <div class="aspect-square rounded-xl overflow-hidden border border-white/10 relative">
+                      <img src="/assets/recovery_boots.png" alt="Wellbeinn HighlyFly Pro Boots" class="w-full h-full object-cover" />
+                      <div class="absolute inset-0 bg-slate-950/20"></div>
+                    </div>
+                    <div class="aspect-square rounded-xl overflow-hidden border border-white/10 relative">
+                      <img src="/assets/recovery_gun.jpg" alt="Wellbeinn Be-In01 Gun" class="w-full h-full object-cover" />
+                      <div class="absolute inset-0 bg-slate-950/20"></div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="p-5 pt-0">
+                  <a href="https://app.dmovezone.com" target="_blank" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-white/10 font-bold text-center rounded-lg transition-all uppercase tracking-wider text-[10px] flex items-center justify-center gap-1 relative z-10" data-t="upsell_recovery_cta">
+                    Order in App <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
+
       </div>
     </section>
-
+    
     <!-- DMOVE HUB CONSTELLATION SECTION -->
     <section
       id="dmove-hub"
@@ -3198,7 +2828,7 @@
               <div
                 class="absolute inset-0 bg-cover bg-center opacity-65"
                 style="
-                  background-image: url(&quot;/assets/longevity_glow_bg.png&quot;);
+                  background-image: url(&quot;/assets/longevity_glow_bg.jpg&quot;);
                 "
               ></div>
               <div class="relative z-10 p-6 text-center">
@@ -3587,244 +3217,7 @@
 
 
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-24 bg-slate-950 relative overflow-hidden">
-      <!-- Background glows -->
-      <div
-        class="absolute top-0 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"
-      ></div>
-      <div
-        class="absolute bottom-0 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"
-      ></div>
-
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <!-- Header -->
-        <div class="text-center mb-20">
-          <h2
-            class="font-outfit text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 italic uppercase tracking-tighter"
-            data-t="pricing_title"
-          >
-            Choose Your Shield
-          </h2>
-          <div
-            class="w-24 h-1 bg-gradient-to-r from-emerald-400 to-indigo-500 mx-auto rounded-full mb-8"
-          ></div>
-          <p
-            class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-medium leading-relaxed"
-            data-t="pricing_subtitle"
-          >
-            Una inversión en tu continuidad. Ahorra tiempo, dinero y lesiones
-            con el respaldo de expertos olímpicos.
-          </p>
-        </div>
-
-        <div
-          class="grid md:grid-cols-2 gap-6 lg:gap-12 items-stretch max-w-4xl mx-auto"
-        >
-          <!-- Column 1: Individual -->
-          <div
-            class="glass-card flex flex-col p-8 md:p-10 rounded-[2.5rem] border-2 border-emerald-500/40 bg-gradient-to-br from-emerald-900/20 to-slate-900/50 relative group hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300"
-          >
-            <div
-              class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-emerald-500 text-slate-950 text-[10px] sm:text-xs font-black uppercase tracking-widest rounded-full shadow-lg shadow-emerald-500/30 whitespace-nowrap"
-              data-t="pricing_individual_badge"
-            >
-              BEST VALUE
-            </div>
-
-            <div class="mb-6 mt-2">
-              <h3
-                class="text-2xl font-extrabold text-white mb-2 uppercase"
-                data-t="pricing_individual_title"
-              >
-                Individual
-              </h3>
-              <p
-                class="text-slate-400 text-sm font-medium h-12"
-                data-t="pricing_individual_desc"
-              >
-                Para cualquier perfil: jugador de basket, deportista amateur o adulto vital.
-              </p>
-            </div>
-
-            <div class="h-10 mb-6 flex items-center justify-center">
-              <span
-                class="text-emerald-400/50 text-xs font-bold tracking-[0.2em] uppercase"
-                data-t="pricing_annual_plan"
-                >Annual Plan</span
-              >
-            </div>
-
-            <div class="mb-8">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-4xl font-black text-white" id="individual-price">299 CHF</span>
-                <span class="text-lg line-through text-slate-500 font-bold ml-1">600 CHF</span>
-                <span class="text-slate-400 font-medium" id="individual-unit" data-t="pricing_unit_annual"
-                  >/ year</span
-                >
-              </div>
-              <p
-                class="text-[10px] text-emerald-400 font-bold tracking-wide uppercase mb-4 h-3 transition-opacity"
-                data-t="pricing_individual_micro"
-              >
-                El soporte individual definitivo para tu salud
-              </p>
-            </div>
-
-            <div class="w-full h-px bg-white/10 mb-8"></div>
-
-            <ul class="space-y-4 mb-10 flex-grow">
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_individual_f1"
-                  ><strong class="text-white">Testing Day:</strong> Sesión presencial o digital de valoración biomecánica.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_individual_f2"
-                  ><strong class="text-white">Radar App:</strong> Monitoreo 24/7 de fatiga y carga de entrenamiento.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_individual_f3"
-                  ><strong class="text-white">Health Manager:</strong> Chat directo y prioritario con David y gestores de salud.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_individual_f4"
-                  ><strong class="text-white">DMove HUB:</strong> Profesionales médicos, partners de recuperación y academia formativa.</span
-                >
-              </li>
-            </ul>
-
-            <a
-              href="https://buy.stripe.com/cNi14o1A6b56d765Mr6AM03"
-              target="_blank"
-              class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-center rounded-xl transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] transform hover:scale-[1.02] active:scale-95 uppercase tracking-widest text-sm mt-auto"
-              data-t="pricing_individual_cta"
-            >
-              Activar Mi Cobertura
-            </a>
-          </div>
-
-          <!-- Column 2: Teams -->
-          <div
-            class="glass-card flex flex-col p-8 md:p-10 rounded-[2.5rem] border border-white/10 bg-slate-900/50 hover:bg-slate-900/80 transition-all duration-300 relative group hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10"
-          >
-            <div
-              class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-indigo-500 text-white text-[10px] sm:text-xs font-black uppercase tracking-widest rounded-full shadow-lg shadow-indigo-500/30 whitespace-nowrap"
-              data-t="pricing_team_badge"
-            >
-              MÍNIMO 10 JUGADORES
-            </div>
-
-            <div class="mb-6 mt-2">
-              <h3
-                class="text-2xl font-extrabold text-white mb-2 uppercase"
-                data-t="pricing_team_title"
-              >
-                Equipos <span class="text-indigo-400 text-lg block sm:inline">(Clubs)</span>
-              </h3>
-              <p
-                class="text-slate-400 text-sm font-medium h-12"
-                data-t="pricing_team_desc"
-              >
-                La solución profesional para proteger, potenciar y gestionar la carga de toda tu plantilla.
-              </p>
-            </div>
-
-            <div class="h-10 mb-6 flex items-center justify-center">
-              <span
-                class="text-indigo-400/50 text-xs font-bold tracking-[0.2em] uppercase"
-                data-t="pricing_team_plan"
-                >Club Plan</span
-              >
-            </div>
-
-            <div class="mb-8">
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-4xl font-black text-white" id="team-price">99 CHF</span>
-                <span class="text-slate-400 font-medium" id="team-unit" data-t="pricing_unit_player_season"
-                  >/ jugador / season</span
-                >
-              </div>
-              <p
-                class="text-[10px] text-indigo-400 font-bold tracking-wide uppercase mb-4 h-3 transition-opacity"
-                data-t="pricing_team_micro"
-              >
-                Suscripción por equipo
-              </p>
-            </div>
-
-            <div class="w-full h-px bg-white/10 mb-8"></div>
-
-            <ul class="space-y-4 mb-10 flex-grow">
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-indigo-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_team_f1"
-                  ><strong class="text-white">Testing Day:</strong> Valoración biomecánica colectiva en pista.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-indigo-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_team_f2"
-                  ><strong class="text-white">Radar App:</strong> Acceso premium completo para cada jugador de la plantilla.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-indigo-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_team_f3"
-                  ><strong class="text-white">Health Manager:</strong> Coordinación y contacto prioritario en caso de lesiones.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <i
-                  data-lucide="check-circle-2"
-                  class="w-5 h-5 text-indigo-400 shrink-0 mt-0.5"
-                ></i>
-                <span class="text-slate-300 text-sm" data-t="pricing_team_f4"
-                  ><strong class="text-white">DMove HUB:</strong> Profesionales médicos, partners de recuperación y academia formativa.</span
-                >
-              </li>
-            </ul>
-
-            <a
-              href="mailto:david@dmovezone.com"
-              class="w-full py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-center rounded-xl transition-all uppercase tracking-wider text-sm flex items-center justify-center gap-2 mt-auto"
-              data-t="pricing_team_cta"
-            >
-              <i data-lucide="mail" class="w-4 h-4"></i> Contactar
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
+    <!-- Old pricing section removed -->
 
     <!-- Contact Section -->
     <section
@@ -4039,68 +3432,6 @@
         }
       };
 
-      // Coverage Selection Details Panel
-      window.selectCoverageZone = function (zoneId, shouldScroll = true) {
-        const container = document.getElementById(
-          "coverage-breakdown-container",
-        );
-        if (container) {
-          container.classList.remove("hidden");
-        }
-
-        const activeClasses = [
-          "border-amber-500",
-          "shadow-[0_0_30px_rgba(245,158,11,0.25)]",
-          "ring-2",
-          "ring-amber-500/20",
-        ];
-
-        for (let i = 1; i <= 4; i++) {
-          const card = document.getElementById(`coverage-card-${i}`);
-          if (card) {
-            // Revert card classes
-            card.classList.remove(
-              "border-amber-500",
-              "shadow-[0_0_30px_rgba(245,158,11,0.25)]",
-              "ring-2",
-              "ring-amber-500/20",
-            );
-            card.classList.add("border-white/10");
-          }
-
-          const content = document.getElementById(`coverage-content-${i}`);
-          if (content) {
-            content.classList.add("hidden");
-            content.classList.remove("opacity-100");
-            content.classList.add("opacity-0");
-          }
-        }
-
-        const activeCard = document.getElementById(`coverage-card-${zoneId}`);
-        if (activeCard) {
-          activeCard.classList.remove("border-white/10");
-          activeCard.classList.add(...activeClasses);
-        }
-
-        const activeContent = document.getElementById(
-          `coverage-content-${zoneId}`,
-        );
-        if (activeContent) {
-          activeContent.classList.remove("hidden");
-          setTimeout(() => {
-            activeContent.classList.remove("opacity-0");
-            activeContent.classList.add("opacity-100");
-          }, 50);
-        }
-
-        if (typeof lucide !== "undefined") {
-          lucide.createIcons();
-        }
-
-        if (shouldScroll && container) {
-          container.scrollIntoView({ behavior: "smooth", block: "nearest" });
-        }
-      };
 
       let activeHubZoneId = null;
 
@@ -4216,7 +3547,7 @@
           nav_player: "Your coverage",
           nav_team: "DMove HUB",
           nav_philosophy: "Philosophy",
-          nav_plans: "Pricing",
+          nav_plans: "Plans",
           nav_join: "Activate your Passport",
 
           // Hero
@@ -4429,13 +3760,32 @@
           hero_hook:
             "We only win if you stay healthy",
           hero_title:
-            'THE SYSTEM FOR PHYSICAL <br class="hidden md:block"> CONTINUITY & LONGEVITY',
+            'The system for fewer injuries <br class="hidden sm:block"> &amp; better performance',
           hero_subtitle_1:
-            'Strategic management of your physical capacity to optimize<br class="hidden sm:block"> your health, your time, and your money.',
+            'We monitor the 5 key factors that predict injuries before they happen.',
           hero_microcopy:
             "DMove is a club membership for physical performance and longevity.",
           hero_cta_individual: "ACTIVATE YOUR PHYSICAL PASSPORT",
           hero_cta_video: "MEET DMOVE IN 1 MINUTE",
+          carousel_tag_1: "Sport",
+          carousel_val_1: "43%",
+          carousel_stat_1: "of athletes get injured every season",
+          carousel_tag_2: "Workplace",
+          carousel_val_2: "60%",
+          carousel_stat_2: "of all sick leaves are MSK-related",
+          carousel_tag_3: "Sport",
+          carousel_val_3: "17<br><span class='text-[10px] uppercase font-bold tracking-normal opacity-85 block -mt-1'>days</span>",
+          carousel_stat_3: "lost per injury on average",
+          carousel_tag_4: "Productivity lost",
+          carousel_val_4: "20-40%",
+          carousel_stat_4: "productivity loss playing/working with pain",
+          carousel_tag_5: "The opportunity",
+          carousel_val_5: "68%",
+          carousel_stat_5: "of injuries preventable with proper monitoring",
+          carousel_tag_6: "The ROI",
+          carousel_val_6: "ROI",
+          carousel_stat_6: "$1 → $2-6 return on every dollar invested in prevention",
+          carousel_statement: '"Most injuries announce themselves days before they happen. Nobody detects them because there is no daily follow-up."',
           video_section_badge: "The Human Touch",
           video_section_title: "Hi, I'm David. This is how the DMoveZone method works.",
           video_section_desc_1: "I designed this ecosystem so you don't have to worry about injuries, fatigue, or daily aches. In this video, I explain how we support you every day to optimize your health, time, and money.",
@@ -4601,22 +3951,19 @@
           isforyou_title: "IS DMOVE FOR YOU?",
           isforyou_subtitle:
             "Our methodology is designed for people committed to their health. Compare if your profile and mindset fit with us.",
-          foryou_yes_title: "DMove is for you if...",
-          foryou_no_title: "DMove is NOT for you if...",
-          foryou_yes_item1: "<strong>Your profile fits our methodology:</strong>",
-          foryou_yes_item1_sub1: "<strong><span class=\"text-emerald-400\">Basketball Player</span>:</strong> Seeking a competitive edge.",
-          foryou_yes_item1_sub_padel: "<strong><span class=\"text-emerald-400\">Padel Player</span>:</strong> Seeking to prevent injuries and perform at their best.",
-          foryou_yes_item1_sub2: "<strong><span class=\"text-emerald-400\">Amateur Athlete</span>:</strong> Tired of injuries and training in pain.",
-          foryou_yes_item1_sub3: "<strong><span class=\"text-emerald-400\">Vital Adult</span>:</strong> Active in avoiding physical decline.",
-          foryou_no_item1: "You are looking for a sedentary magic solution with zero effort.",
-          foryou_yes_item2: "<strong>You seek <span class=\"text-emerald-400\">Continuity</span> and <span class=\"text-emerald-400\">Autonomy</span>.</strong>",
-          foryou_no_item2: "<strong>You prefer dependency over learning.</strong>",
-          foryou_yes_item3: "<strong>You view health as an <span class=\"text-emerald-400\">Investment</span>.</strong>",
-          foryou_no_item3: "<strong>You view health as an expense.</strong>",
-          foryou_yes_item4: "<strong>You value your <span class=\"text-emerald-400\">Time</span>.</strong>",
-          foryou_no_item4: "You don't mind wasting hours in waiting rooms.",
-          foryou_yes_item5: "<strong>You want Real <span class=\"text-emerald-400\">Data</span>.</strong>",
-          foryou_no_item5: "<strong>You prefer to ignore what is really happening in your body.</strong>",
+          foryou_col1_title: "Individual Athlete",
+          foryou_col1_item1: "Basketball or Padel player seeking an edge",
+          foryou_col1_item2: "Amateur athlete tired of training in pain",
+          foryou_col1_item3: "Adult who wants to stay active without decline",
+          foryou_col2_title: "Clubs & Federations",
+          foryou_col2_item1: "You lose key players to injuries every season",
+          foryou_col2_item2: "You have no daily monitoring system for your squad",
+          foryou_col2_item3: "You want to reduce injury risk without adding complexity",
+          foryou_col3_title: "Companies & Organizations",
+          foryou_col3_item1: "MSK disorders are your main cause of sick leave",
+          foryou_col3_item2: "You want to reduce absenteeism and improve productivity",
+          foryou_col3_item3: "You need a simple system your team will actually use",
+          foryou_statement: '"Same system. Different context. Same result: fewer injuries, better performance."',
           main_tab_profile: "PROFILE",
           main_tab_mindset: "MINDSET",
           main_tab_slogan: '"We don\'t rent health, we build autonomy."',
@@ -4779,44 +4126,84 @@
             "David combines his experience in high-performance Olympics with a passion for basketball to democratize health through human technology.",
 
           // Plans Section
-          plans_title: "DMove Zone Plans",
-          pricing_title: "Choose Your Shield",
-          pricing_subtitle:
-            "An investment in your continuity. Save time, money, and injuries backed by Olympic experts.",
-          pricing_individual_badge: "BEST VALUE",
-          pricing_individual_title: "Individual",
-          pricing_individual_desc:
-            "For any profile: basketball player, amateur athlete, or vital active adult.",
-          pricing_annual_plan: "Annual Plan",
-          pricing_unit_annual: "/ year",
-          pricing_individual_micro: "The ultimate individual support for your health",
-          pricing_individual_f1:
-            '<strong class="text-white">Testing Day:</strong> Guided in-app + Discount on in-person (99 CHF instead of 199 CHF).',
-          pricing_individual_f2: '<strong class="text-white">Radar App:</strong> 24/7 training load and fatigue monitoring.',
-          pricing_individual_f3: '<strong class="text-white">Health Manager:</strong> Direct, high-priority chat with David and health managers.',
-          pricing_individual_f4: '<strong class="text-white">DMove HUB:</strong> Medical Professionals, Recovery Partners, and Learning Academy.',
-          pricing_individual_cta: "Activate My Coverage",
-          pricing_team_badge: "MINIMUM 10 PLAYERS",
-          pricing_team_title: 'Teams <span class="text-indigo-400 text-lg block sm:inline">(Clubs)</span>',
-          pricing_team_desc:
-            "The professional solution to protect, empower, and manage the load of your entire squad.",
-          pricing_team_plan: "Club Plan",
-          pricing_unit_player_season: "/ player / season",
-          pricing_team_micro: "Team-based subscription",
-          pricing_team_f1: '<strong class="text-white">Testing Day:</strong> Collective biomechanics assessment on the court.',
-          pricing_team_f2: '<strong class="text-white">Radar App:</strong> Full premium access for every player in the squad.',
-          pricing_team_f3: '<strong class="text-white">Health Manager:</strong> Coordination and priority contact in case of injury.',
-          pricing_team_f4: '<strong class="text-white">DMove HUB:</strong> Medical Professionals, Recovery Partners, and Learning Academy.',
-          pricing_team_cta: '<i data-lucide="mail" class="w-4 h-4"></i> Contact',
-          pricing_risk_1_title: "No Commitments",
-          pricing_risk_1_desc:
-            "Cancel your monthly plan anytime, no questions asked.",
-          pricing_risk_2_title: "Shielded Deductible",
-          pricing_risk_2_desc:
-            "We solve your mechanical doubts before they become a medical insurance bill.",
-          pricing_risk_3_title: "Olympic Criterion",
-          pricing_risk_3_desc:
-            "Not generic AI; it's the knowledge of an elite Physio validating every single data point.",
+          pricing_badge: "Pricing & Coverage",
+          new_pricing_title: "Become A DMove member",
+          new_pricing_subtitle: "Democratizing elite support with direct Olympic expert guidance and advanced AI health tracking.",
+          pricing_free_badge: "App",
+          pricing_free_title: "APP: FREE",
+          pricing_free_desc: "Get started with your core health & performance tracking.",
+          pricing_free_unit: "Free for now (25 CHF coming soon)",
+          pricing_free_f1: "Body tracking",
+          pricing_free_f2: "Performance tests",
+          pricing_free_f3: "Academy programs (partial access)",
+          pricing_free_f4: "Chatbot insights",
+          pricing_free_cta: "Download App",
+          pricing_indiv_tag: "Active Prevention Shield",
+          pricing_indiv_badge: "DMove Member",
+          pricing_indiv_title: "Become a Dmove member",
+          pricing_indiv_desc_quote: '"As a DMove member, you get what elite athletes have always had — daily monitoring, expert guidance, and a network that keeps you performing at your best. Now available for everyone."',
+          pricing_indiv_unit: "/ year &nbsp;·&nbsp; <span style='text-decoration:line-through;opacity:0.5'>299 CHF/year</span>",
+          pricing_indiv_offer_label: "Special Offer Now",
+          pricing_indiv_f1: '<strong class="text-indigo-300">Direct Chat:</strong> Private priority line to David (Olympic Traumatology & Sports Physio).',
+          pricing_indiv_f2: '<strong class="text-indigo-300">App Premium:</strong> Biomechanical dashboard, symptoms radar &amp; academy.',
+          pricing_indiv_f3: '<strong class="text-indigo-300">HUB Privileges:</strong> Instant scheduling with elite Swiss/Spanish specialists and recovery product discounts.',
+          pricing_individual_cta: "Join Now &amp; Activate Passport",
+          pricing_team_badge_new: "Pack Basket Clubs",
+          pricing_team_title_new: "BASKET CLUBS",
+          pricing_team_desc_new: "Collective monitoring and load-management for squads & teams.",
+          pricing_team_unit_new: "/ player / season",
+          pricing_team_f1_new: "Daily radar monitoring for up to 15+ athletes.",
+          pricing_team_f2_new: "<strong>Testing Day included:</strong> Full squad mechanical calibration.",
+          pricing_team_cta: "Contact for more info",
+          pricing_corp_badge: "Pack Corporate",
+          pricing_corp_title: "CORPORATE",
+          pricing_corp_desc: "Reduce MSK absenteeism and boost overall productivity.",
+          pricing_corp_unit: "Custom plans for teams of any size",
+          pricing_corp_f1: "Health Passport integration to monitor desk posture & fatigue.",
+          pricing_corp_f2: "Concrete reduction in sick leave and physical decline.",
+          pricing_corp_cta: "Contact for more info",
+          upsells_title: "UPSELLS",
+          upsell_testing_title: "Testing Day",
+          upsell_call_title: "Call with David",
+          upsell_specialist_title: "Specialist Sessions",
+          upsell_specialist_benefit: '<strong class="text-indigo-300">DMove Members:</strong> Priority &amp; Partner Rates',
+          upsell_specialist_cta_new: "See more in the App",
+          upsell_spec_doc: "Doctor",
+          upsell_spec_physio: "Physio",
+          upsell_spec_nutri: "Nutritionist",
+          upsell_spec_trainer: "Trainer",
+          upsell_recovery_title: "Recovery Products",
+          upsell_recovery_benefit: '<strong class="text-indigo-300">DMove Members:</strong> Exclusive Partner Pricing',
+          upsell_recovery_desc: "Access vetted compression gear & active recovery tools at member rates.",
+          upsell_recovery_cta: "Order in App",
+          upsell_testing_cta: "Book Testing Day",
+          upsell_call_cta: "Book Call with David",
+          upsell_testing_price_details: `<div class="flex items-baseline gap-2 mb-2">
+                      <span class="text-3xl font-black text-white font-outfit">150</span>
+                      <span class="text-slate-400 text-sm font-semibold">CHF</span>
+                      <span class="text-slate-500 text-xs font-medium ml-1">(Non-members)</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-indigo-300">50% DMove Members:</strong> 75 CHF</span>
+                      </div>
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-emerald-300">Group Members:</strong> 19 CHF</span>
+                      </div>
+                    </div>`,
+          upsell_call_price_details: `<div class="flex items-baseline gap-2 mb-2">
+                      <span class="text-3xl font-black text-white font-outfit">99</span>
+                      <span class="text-slate-400 text-sm font-semibold">CHF</span>
+                      <span class="text-slate-500 text-xs font-medium ml-1">(Non-members)</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-indigo-300">50% DMove Members:</strong> 50 CHF</span>
+                      </div>
+                    </div>`,
 
           // Contact & Footer
           contact_title:
@@ -4858,7 +4245,7 @@
           nav_player: "Tu cobertura",
           nav_team: "DMove HUB",
           nav_philosophy: "Filosofía",
-          nav_plans: "Precios",
+          nav_plans: "Planes",
           nav_join: "Activa tu Pasaporte",
 
           // Hero
@@ -5077,13 +4464,32 @@
           hero_hook:
             "Solo ganamos si te mantienes sano",
           hero_title:
-            'EL SISTEMA PARA LA CONTINUIDAD FÍSICA <br class="hidden md:block"> Y LA LONGEVIDAD.',
+            'El sistema para menos lesiones <br class="hidden sm:block"> &amp; mejor rendimiento',
           hero_subtitle_1:
-            'Gestión estratégica de tu capacidad física para optimizar<br class="hidden sm:block"> tu salud, tu tiempo y tu dinero.',
+            'Monitoreamos los 5 factores clave que predicen las lesiones antes de que ocurran.',
           hero_microcopy:
             "DMove es una membresía de club para el rendimiento físico y la longevidad.",
           hero_cta_individual: "ACTIVA TU PASAPORTE FÍSICO",
           hero_cta_video: "CONÓCENOS EN 1 MINUTO",
+          carousel_tag_1: "Deporte",
+          carousel_val_1: "43%",
+          carousel_stat_1: "de los atletas se lesionan cada temporada",
+          carousel_tag_2: "Trabajo",
+          carousel_val_2: "60%",
+          carousel_stat_2: "de las bajas médicas son problemas músculo-esqueléticos",
+          carousel_tag_3: "Deporte",
+          carousel_val_3: "17<br><span class='text-[10px] uppercase font-bold tracking-normal opacity-85 block -mt-1'>días</span>",
+          carousel_stat_3: "perdidos de media por cada lesión",
+          carousel_tag_4: "Productividad",
+          carousel_val_4: "20-40%",
+          carousel_stat_4: "pérdida de productividad al jugar/trabajar con dolor",
+          carousel_tag_5: "La oportunidad",
+          carousel_val_5: "68%",
+          carousel_stat_5: "de las lesiones son prevenibles con monitoreo adecuado",
+          carousel_tag_6: "El retorno",
+          carousel_val_6: "ROI",
+          carousel_stat_6: "1€ → 2-6€ de retorno por cada euro invertido en prevención",
+          carousel_statement: '"La mayoría de las lesiones se anuncian días antes de que ocurran. Nadie las detecta porque no existe un seguimiento diario."',
           video_section_badge: "El Toque Humano",
           video_section_title: "Hola, soy David. Así funciona el método DMoveZone.",
           video_section_desc_1: "He diseñado este ecosistema para que no tengas que preocuparte por lesiones, fatiga o dolores diarios. En este vídeo te explico cómo te acompañamos cada día para optimizar tu salud, tu tiempo y tu dinero.",
@@ -5251,22 +4657,19 @@
           isforyou_title: "¿ES DMOVE PARA TI?",
           isforyou_subtitle:
             "Nuestra metodología está diseñada para personas comprometidas con su salud. Compara si tu perfil y mindset encajan con nosotros.",
-          foryou_yes_title: "DMove es para ti si...",
-          foryou_no_title: "DMove NO es para ti si...",
-          foryou_yes_item1: "<strong>Tu perfil encaja con nuestra metodología:</strong>",
-          foryou_yes_item1_sub1: "<strong><span class=\"text-emerald-400\">Jugador de Basket</span>:</strong> Que busca el \"edge\" competitivo.",
-          foryou_yes_item1_sub_padel: "<strong><span class=\"text-emerald-400\">Jugador de Pádel</span>:</strong> Que busca prevenir lesiones y rendir al máximo.",
-          foryou_yes_item1_sub2: "<strong><span class=\"text-emerald-400\">Deportista Amateur</span>:</strong> Cansado de lesionarte y entrenar con dolor.",
-          foryou_yes_item1_sub3: "<strong><span class=\"text-emerald-400\">Adulto Vital</span>:</strong> Quieres evitar la decadencia física y seguir activo.",
-          foryou_no_item1: "Buscas una solución milagrosa y pasiva sin esfuerzo.",
-          foryou_yes_item2: "<strong>Buscas <span class=\"text-emerald-400\">Continuidad</span> y <span class=\"text-emerald-400\">Autonomía</span>.</strong>",
-          foryou_no_item2: "<strong>Prefieres la dependencia médica tradicional.</strong>",
-          foryou_yes_item3: "<strong>Ves la salud como una <span class=\"text-emerald-400\">Inversión</span>.</strong>",
-          foryou_no_item3: "<strong>Ves la salud como un gasto.</strong>",
-          foryou_yes_item4: "<strong>Valoras tu <span class=\"text-emerald-400\">Tiempo</span>.</strong>",
-          foryou_no_item4: "No te importa perder horas en salas de espera.",
-          foryou_yes_item5: "<strong>Quieres <span class=\"text-emerald-400\">Datos Reales</span>.</strong>",
-          foryou_no_item5: "<strong>Prefieres ignorar lo que realmente pasa en tu cuerpo.</strong>",
+          foryou_col1_title: "Atleta Individual",
+          foryou_col1_item1: "Jugador de Basket o Pádel que busca el edge competitivo",
+          foryou_col1_item2: "Deportista amateur cansado de entrenar con dolor",
+          foryou_col1_item3: "Adulto que quiere seguir activo sin decaer físicamente",
+          foryou_col2_title: "Clubes y Federaciones",
+          foryou_col2_item1: "Pierdes jugadores clave por lesiones cada temporada",
+          foryou_col2_item2: "No tienes un sistema de monitorización diario para tu plantilla",
+          foryou_col2_item3: "Quieres reducir el riesgo de lesiones sin añadir complejidad",
+          foryou_col3_title: "Empresas y Organizaciones",
+          foryou_col3_item1: "Los problemas músculo-esqueléticos son tu principal causa de baja",
+          foryou_col3_item2: "Quieres reducir el absentismo y mejorar la productividad",
+          foryou_col3_item3: "Necesitas un sistema sencillo que tu equipo realmente use",
+          foryou_statement: '"Mismo sistema. Diferente contexto. Mismo resultado: menos lesiones, mejor rendimiento."',
           main_tab_profile: "PERFIL",
           main_tab_mindset: "MINDSET",
           main_tab_slogan: '"No alquilamos salud, construimos autonomía."',
@@ -5428,44 +4831,84 @@
             "David combina su experiencia en el alto rendimiento olímpico con la pasión por el basket para democratizar la salud mediante tecnología humana.",
 
           // Plans Section
-          plans_title: "Planes DMove Zone",
-          pricing_title: "Choose Your Shield",
-          pricing_subtitle:
-            "Una inversión en tu continuidad. Ahorra tiempo, dinero y lesiones con el respaldo de expertos olímpicos.",
-          pricing_individual_badge: "BEST VALUE",
-          pricing_individual_title: "Individual",
-          pricing_individual_desc:
-            "Para cualquier perfil: jugador de basket, deportista amateur o adulto vital.",
-          pricing_annual_plan: "Plan Anual",
-          pricing_unit_annual: "/ año",
-          pricing_individual_micro: "El soporte individual definitivo para tu salud",
-          pricing_individual_f1:
-            '<strong class="text-white">Testing Day:</strong> Guiado en la app + Descuento en presencial (99 CHF en vez de 199 CHF).',
-          pricing_individual_f2: '<strong class="text-white">Radar App:</strong> Monitoreo 24/7 de fatiga y carga de entrenamiento.',
-          pricing_individual_f3: '<strong class="text-white">Health Manager:</strong> Chat directo y prioritario con David y gestores de salud.',
-          pricing_individual_f4: '<strong class="text-white">DMove HUB:</strong> Profesionales médicos, partners de recuperación y academia formativa.',
-          pricing_individual_cta: "Activar Mi Cobertura",
-          pricing_team_badge: "MÍNIMO 10 JUGADORES",
-          pricing_team_title: 'Equipos <span class="text-indigo-400 text-lg block sm:inline">(Clubs)</span>',
-          pricing_team_desc:
-            "La solución profesional para proteger, potenciar y gestionar la carga de toda tu plantilla.",
-          pricing_team_plan: "Plan Club",
-          pricing_unit_player_season: "/ jugador / temporada",
-          pricing_team_micro: "Suscripción por equipo",
-          pricing_team_f1: '<strong class="text-white">Testing Day:</strong> Valoración biomecánica colectiva en pista.',
-          pricing_team_f2: '<strong class="text-white">Radar App:</strong> Acceso premium completo para cada jugador de la plantilla.',
-          pricing_team_f3: '<strong class="text-white">Health Manager:</strong> Coordinación y contacto prioritario en caso de lesiones.',
-          pricing_team_f4: '<strong class="text-white">DMove HUB:</strong> Profesionales médicos, partners de recuperación y academia formativa.',
-          pricing_team_cta: '<i data-lucide="mail" class="w-4 h-4"></i> Contactar',
-          pricing_risk_1_title: "Sin Permanencia",
-          pricing_risk_1_desc:
-            "Cancela tu plan mensual cuando quieras sin explicaciones.",
-          pricing_risk_2_title: "Franquicia Blindada",
-          pricing_risk_2_desc:
-            "Resolvemos tus dudas mecánicas antes de que se conviertan en una factura de tu seguro.",
-          pricing_risk_3_title: "Criterio Olímpico",
-          pricing_risk_3_desc:
-            "No es una IA genérica; es el conocimiento de un Fisio de élite validando cada dato.",
+          pricing_badge: "Tarifas y Cobertura",
+          new_pricing_title: "Hazte miembro de DMove",
+          new_pricing_subtitle: "Democratizando el soporte de élite con guía directa de expertos olímpicos y seguimiento de salud avanzado con IA.",
+          pricing_free_badge: "App",
+          pricing_free_title: "APP: GRATIS",
+          pricing_free_desc: "Comienza con el seguimiento básico de tu salud y rendimiento.",
+          pricing_free_unit: "Gratis de momento (25 CHF próximamente)",
+          pricing_free_f1: "Seguimiento corporal",
+          pricing_free_f2: "Tests de rendimiento",
+          pricing_free_f3: "Programas de la academia (acceso parcial)",
+          pricing_free_f4: "Insights del chatbot",
+          pricing_free_cta: "Descargar App",
+          pricing_indiv_tag: "Escudo de Prevención Activa",
+          pricing_indiv_badge: "Miembro DMove",
+          pricing_indiv_title: "Hazte miembro de DMove",
+          pricing_indiv_desc_quote: '"Como miembro de DMove, obtienes lo que los atletas de élite siempre han tenido: monitorización diaria, guía experta y una red que te mantiene rindiendo al máximo. Ahora disponible para todos."',
+          pricing_indiv_unit: "/ año &nbsp;·&nbsp; <span style='text-decoration:line-through;opacity:0.5'>299 CHF/año</span>",
+          pricing_indiv_offer_label: "Oferta Especial Ahora",
+          pricing_indiv_f1: '<strong class="text-indigo-300">Chat Directo:</strong> Línea privada prioritaria con David (Fisioterapeuta Olímpico y Traumatología Deportiva).',
+          pricing_indiv_f2: '<strong class="text-indigo-300">App Premium:</strong> Panel biomecánico, radar de síntomas y academia.',
+          pricing_indiv_f3: '<strong class="text-indigo-300">Privilegios HUB:</strong> Citas exprés con especialistas de élite suizos/españoles y descuentos en productos de recuperación.',
+          pricing_individual_cta: "Unirse ahora y activar pasaporte",
+          pricing_team_badge_new: "Pack Basket Clubs",
+          pricing_team_title_new: "CLUBES DE BALONCESTO",
+          pricing_team_desc_new: "Monitoreo colectivo y gestión de carga para plantillas y equipos.",
+          pricing_team_unit_new: "/ jugador / temporada",
+          pricing_team_f1_new: "Seguimiento diario por radar para hasta 15+ atletas.",
+          pricing_team_f2_new: "<strong>Testing Day incluido:</strong> Calibración mecánica de toda la plantilla.",
+          pricing_team_cta: "Contactar para más información",
+          pricing_corp_badge: "Pack Corporate",
+          pricing_corp_title: "CORPORATIVO",
+          pricing_corp_desc: "Reduce el absentismo músculo-esquelético y mejora la productividad general.",
+          pricing_corp_unit: "Planes a medida para equipos de cualquier tamaño",
+          pricing_corp_f1: "Integración del Pasaporte de Salud para vigilar la fatiga y postura de oficina.",
+          pricing_corp_f2: "Reducción concreta de bajas médicas y declive físico.",
+          pricing_corp_cta: "Contactar para más información",
+          upsells_title: "VENTAS ADICIONALES",
+          upsell_testing_title: "Testing Day",
+          upsell_call_title: "Llamada con David",
+          upsell_specialist_title: "Sesiones Especialistas",
+          upsell_specialist_benefit: '<strong class="text-indigo-300">Miembros DMove:</strong> Prioridad y Tarifas Partner',
+          upsell_specialist_cta_new: "Ver más en la App",
+          upsell_spec_doc: "Médico",
+          upsell_spec_physio: "Fisio",
+          upsell_spec_nutri: "Nutricionista",
+          upsell_spec_trainer: "Entrenador",
+          upsell_recovery_title: "Productos Recuperación",
+          upsell_recovery_benefit: '<strong class="text-indigo-300">Miembros DMove:</strong> Precios Partner Exclusivos',
+          upsell_recovery_desc: "Acceso a botas de compresión y herramientas a precios reducidos.",
+          upsell_recovery_cta: "Pedir en la App",
+          upsell_testing_cta: "Reservar Testing Day",
+          upsell_call_cta: "Reservar Llamada con David",
+          upsell_testing_price_details: `<div class="flex items-baseline gap-2 mb-2">
+                      <span class="text-3xl font-black text-white font-outfit">150</span>
+                      <span class="text-slate-400 text-sm font-semibold">CHF</span>
+                      <span class="text-slate-500 text-xs font-medium ml-1">(No miembros)</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-indigo-300">50% Miembros DMove:</strong> 75 CHF</span>
+                      </div>
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-emerald-300">Miembros de Grupo:</strong> 19 CHF</span>
+                      </div>
+                    </div>`,
+          upsell_call_price_details: `<div class="flex items-baseline gap-2 mb-2">
+                      <span class="text-3xl font-black text-white font-outfit">99</span>
+                      <span class="text-slate-400 text-sm font-semibold">CHF</span>
+                      <span class="text-slate-500 text-xs font-medium ml-1">(No miembros)</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-indigo-300">50% Miembros DMove:</strong> 50 CHF</span>
+                      </div>
+                    </div>`,
 
           // Contact & Footer
           contact_title:
@@ -5507,7 +4950,7 @@
           nav_player: "Votre couverture",
           nav_team: "DMove HUB",
           nav_philosophy: "Philosophie",
-          nav_plans: "Tarifs",
+          nav_plans: "Plans",
           nav_join: "Activez votre Passeport",
 
           // Hero
@@ -5726,13 +5169,32 @@
           hero_hook:
             "Nous ne gagnons que si vous restez en bonne santé",
           hero_title:
-            'LE SYSTÈME POUR LA CONTINUITÉ PHYSIQUE <br class="hidden md:block"> ET LA LONGÉVITÉ',
+            'Le système pour moins de blessures <br class="hidden sm:block"> &amp; de meilleures performances',
           hero_subtitle_1:
-            'Gestion stratégique de votre capacité physique pour optimiser<br class="hidden sm:block"> votre santé, votre temps et votre argent.',
+            'Nous surveillons les 5 facteurs clés qui prédisent les blessures avant qu\'elles ne surviennent.',
           hero_microcopy:
             "DMove est une adhésion de club pour la performance physique et la longévité.",
           hero_cta_individual: "ACTIVEZ VOTRE PASSEPORT PHYSIQUE",
           hero_cta_video: "DÉCOUVREZ DMOVE EN 1 MIN",
+          carousel_tag_1: "Sport",
+          carousel_val_1: "43%",
+          carousel_stat_1: "de blessures chez les athlètes chaque saison",
+          carousel_tag_2: "Travail",
+          carousel_val_2: "60%",
+          carousel_stat_2: "des arrêts maladie liés à des troubles MSK",
+          carousel_tag_3: "Sport",
+          carousel_val_3: "17<br><span class='text-[10px] uppercase font-bold tracking-normal opacity-85 block -mt-1'>jours</span>",
+          carousel_stat_3: "d'absence en moyenne par blessure",
+          carousel_tag_4: "Productivité",
+          carousel_val_4: "20-40%",
+          carousel_stat_4: "de perte de productivité en jouant/travaillant avec douleur",
+          carousel_tag_5: "L'opportunité",
+          carousel_val_5: "68%",
+          carousel_stat_5: "de blessures évitées grâce à un suivi adapté",
+          carousel_tag_6: "Le ROI",
+          carousel_val_6: "ROI",
+          carousel_stat_6: "1$ → 2-6$ de retour pour chaque dollar investi en prévention",
+          carousel_statement: '"La plupart des blessures se signalent quelques jours avant qu\'elles ne surviennent. Personne ne les détecte faute de suivi quotidien."',
           video_section_badge: "La Touche Humaine",
           video_section_title: "Bonjour, je suis David. Voici comment fonctionne la méthode DMoveZone.",
           video_section_desc_1: "J'ai conçu cet écosystème pour que vous n'y ayez pas à vous soucier des blessures, de la fatigue ou des douleurs quotidiennes. Dans cette vidéo, je vous explique comment nous vous accompagnons chaque jour pour optimiser votre santé, votre temps et votre argent.",
@@ -5901,22 +5363,19 @@
           isforyou_title: "DMOVE EST-IL POUR VOUS ?",
           isforyou_subtitle:
             "Notre méthodologie est conçue pour les personnes engagées dans leur santé. Comparez si votre profil et votre état d'esprit nous correspondent.",
-          foryou_yes_title: "DMove est pour vous si...",
-          foryou_no_title: "DMove n'est PAS pour vous si...",
-          foryou_yes_item1: "<strong>Votre profil correspond à notre méthodologie :</strong>",
-          foryou_yes_item1_sub1: "<strong><span class=\"text-emerald-400\">Joueur de Basket</span> :</strong> Recherche un avantage compétitif.",
-          foryou_yes_item1_sub_padel: "<strong><span class=\"text-emerald-400\">Joueur de Padel</span> :</strong> Recherche de prévention des blessures et de performance.",
-          foryou_yes_item1_sub2: "<strong><span class=\"text-emerald-400\">Athlète Amateur</span> :</strong> Fatigué de se blesser et de s'entraîner avec douleur.",
-          foryou_yes_item1_sub3: "<strong><span class=\"text-emerald-400\">Adulte Vital</span> :</strong> Souhaite éviter le déclin physique et rester actif.",
-          foryou_no_item1: "Vous cherchez une solution miracle passive sans effort.",
-          foryou_yes_item2: "<strong>Vous recherchez <span class=\"text-emerald-400\">Continuité</span> et <span class=\"text-emerald-400\">Autonomie</span>.</strong>",
-          foryou_no_item2: "<strong>Vous préférez la dépendance médicale.</strong>",
-          foryou_yes_item3: "<strong>Vous voyez la santé comme un <span class=\"text-emerald-400\">Investissement</span>.</strong>",
-          foryou_no_item3: "<strong>Vous considérez la santé comme une dépense.</strong>",
-          foryou_yes_item4: "<strong>Vous valorisez votre <span class=\"text-emerald-400\">Temps</span>.</strong>",
-          foryou_no_item4: "Perdre des heures dans les salles d'attente ne vous dérange pas.",
-          foryou_yes_item5: "<strong>Vous voulez des <span class=\"text-emerald-400\">Données Réelles</span>.</strong>",
-          foryou_no_item5: "<strong>Vous préférez ignorer ce qui se passe réellement dans votre corps.</strong>",
+          foryou_col1_title: "Athlète Individuel",
+          foryou_col1_item1: "Joueur de Basket ou Padel qui cherche un avantage",
+          foryou_col1_item2: "Athlète amateur fatigué de s'entraîner avec douleur",
+          foryou_col1_item3: "Adulte qui veut rester actif sans décliner",
+          foryou_col2_title: "Clubs & Fédérations",
+          foryou_col2_item1: "Vous perdez des joueurs clés sur blessure chaque saison",
+          foryou_col2_item2: "Vous n'avez pas de système de suivi quotidien pour votre effectif",
+          foryou_col2_item3: "Vous voulez réduire les risques de blessure sans complexité",
+          foryou_col3_title: "Entreprises & Organisations",
+          foryou_col3_item1: "Les troubles MSK sont la principale cause d'arrêts maladie",
+          foryou_col3_item2: "Vous voulez réduire l'absentéisme et doper la productivité",
+          foryou_col3_item3: "Vous cherchez un système simple que vos équipes utiliseront vraiment",
+          foryou_statement: '"Même système. Différent contexte. Même résultat : moins de blessures, meilleures performances."',
           main_tab_profile: "PROFIL",
           main_tab_mindset: "MINDSET",
           main_tab_slogan: '"Nous ne louons pas la santé, nous construisons l\'autonomie."',
@@ -6082,44 +5541,84 @@
             "David combine son expérience olympique avec sa passion du basket pour démocratiser la santé.",
 
           // Plans Section
-          plans_title: "Plans DMove Zone",
-          pricing_title: "Choose Your Shield",
-          pricing_subtitle:
-            "Un investissement dans votre continuité. Économisez du temps, de l'argent et des blessures avec le soutien d'experts olympiques.",
-          pricing_individual_badge: "BEST VALUE",
-          pricing_individual_title: "Individuel",
-          pricing_individual_desc:
-            "Pour tout profil : joueur de basket, athlète amateur ou adulte actif vital.",
-          pricing_annual_plan: "Plan Annuel",
-          pricing_unit_annual: "/ an",
-          pricing_individual_micro: "Le soutien individuel ultime pour votre santé",
-          pricing_individual_f1:
-            '<strong class="text-white">Testing Day:</strong> Guidé dans l\'app + Remise en présentiel (99 CHF au lieu de 199 CHF).',
-          pricing_individual_f2: '<strong class="text-white">Radar App:</strong> Surveillance 24/7 de la charge d\'entraînement et de la fatigue.',
-          pricing_individual_f3: '<strong class="text-white">Health Manager:</strong> Chat direct et hautement prioritaire avec David et les gestionnaires de santé.',
-          pricing_individual_f4: '<strong class="text-white">DMove HUB:</strong> Professionnels de santé, partenaires de récupération et académie.',
-          pricing_individual_cta: "Activer Ma Couverture",
-          pricing_team_badge: "MINIMUM 10 JOUEURS",
-          pricing_team_title: 'Équipes <span class="text-indigo-400 text-lg block sm:inline">(Clubs)</span>',
-          pricing_team_desc:
-            "La solution professionnelle pour protéger, responsabiliser et gérer la charge de toute votre équipe.",
-          pricing_team_plan: "Plan Club",
-          pricing_unit_player_season: "/ joueur / saison",
-          pricing_team_micro: "Abonnement par équipe",
-          pricing_team_f1: '<strong class="text-white">Testing Day:</strong> Évaluation collective de la biomécanique en personne sur le terrain.',
-          pricing_team_f2: '<strong class="text-white">Radar App:</strong> Accès premium complet pour chaque joueur de l\'équipe.',
-          pricing_team_f3: '<strong class="text-white">Health Manager:</strong> Coordination préférée et prioritaire en cas de blessures.',
-          pricing_team_f4: '<strong class="text-white">DMove HUB:</strong> Professionnels de santé, partenaires de récupération et académie.',
-          pricing_team_cta: '<i data-lucide="mail" class="w-4 h-4"></i> Contacter',
-          pricing_risk_1_title: "Sans Engagement",
-          pricing_risk_1_desc:
-            "Annulez votre plan mensuel quand vous le souhaitez, sans explications.",
-          pricing_risk_2_title: "Franchise Protégée",
-          pricing_risk_2_desc:
-            "Nous résolvons vos doutes mécaniques avant qu'ils ne deviennent une facture médicale.",
-          pricing_risk_3_title: "Critère Olympique",
-          pricing_risk_3_desc:
-            "Pas d'IA générique ; c'est l'expertise d'un Physio d'élite validant chaque donnée.",
+          pricing_badge: "Tarifs et Couverture",
+          new_pricing_title: "Devenir membre DMove",
+          new_pricing_subtitle: "Démocratiser le soutien de l'élite grâce à l'accompagnement direct d'experts olympiques et au suivi de santé par IA.",
+          pricing_free_badge: "App",
+          pricing_free_title: "APP: GRATUIT",
+          pricing_free_desc: "Commencez par le suivi de base de votre santé et de vos performances.",
+          pricing_free_unit: "Gratuit pour l'instant (25 CHF prochainement)",
+          pricing_free_f1: "Suivi corporel",
+          pricing_free_f2: "Tests de performance",
+          pricing_free_f3: "Programmes de l'académie (accès partiel)",
+          pricing_free_f4: "Insights du chatbot",
+          pricing_free_cta: "Télécharger l'App",
+          pricing_indiv_tag: "Bouclier de Prévention Active",
+          pricing_indiv_badge: "Membre DMove",
+          pricing_indiv_title: "Devenir membre DMove",
+          pricing_indiv_desc_quote: '"En tant que membre DMove, vous bénéficiez de ce que les athlètes d\'élite ont toujours eu : un suivi quotidien, des conseils d\'experts et un réseau pour maintenir vos performances. Désormais accessible à tous."',
+          pricing_indiv_unit: "/ an &nbsp;·&nbsp; <span style='text-decoration:line-through;opacity:0.5'>299 CHF/an</span>",
+          pricing_indiv_offer_label: "Offre Spéciale Actuelle",
+          pricing_indiv_f1: '<strong class="text-indigo-300">Chat Direct:</strong> Ligne privée prioritaire avec David (Kinésithérapeute Olympique & Traumatologie).',
+          pricing_indiv_f2: '<strong class="text-indigo-300">App Premium:</strong> Tableau de bord biomécanique, radar des symptômes & académie.',
+          pricing_indiv_f3: '<strong class="text-indigo-300">Privilèges HUB:</strong> Prise de rendez-vous accélérée avec des spécialistes suisses/espagnols d\'élite et remises partenaires.',
+          pricing_individual_cta: "Rejoindre et Activer Passeport",
+          pricing_team_badge_new: "Pack Basket Clubs",
+          pricing_team_title_new: "CLUBS DE BASKET",
+          pricing_team_desc_new: "Suivi collectif et gestion de charge pour effectifs et équipes.",
+          pricing_team_unit_new: "/ joueur / saison",
+          pricing_team_f1_new: "Suivi radar quotidien pour jusqu'à 15+ athlètes.",
+          pricing_team_f2_new: "<strong>Testing Day inclus:</strong> Étalonnage mécanique complet de l'équipe.",
+          pricing_team_cta: "Contact pour plus d'infos",
+          pricing_corp_badge: "Pack Corporate",
+          pricing_corp_title: "ENTREPRISE",
+          pricing_corp_desc: "Réduire l'absentéisme lié aux troubles MSK et stimuler la productivité.",
+          pricing_corp_unit: "Plans sur mesure pour équipes de toutes tailles",
+          pricing_corp_f1: "Intégration du Passeport de Santé pour suivre la fatigue et posture de bureau.",
+          pricing_corp_f2: "Diminution concrète des arrêts maladie et du déclin physique.",
+          pricing_corp_cta: "Contact pour plus d'infos",
+          upsells_title: "COMPLÉMENTS",
+          upsell_testing_title: "Testing Day",
+          upsell_call_title: "Appel avec David",
+          upsell_specialist_title: "Séances Spécialistes",
+          upsell_specialist_benefit: '<strong class="text-indigo-300">Membres DMove:</strong> Priorité et Tarifs Partenaires',
+          upsell_specialist_cta_new: "Voir plus sur l'App",
+          upsell_spec_doc: "Médecin",
+          upsell_spec_physio: "Kinés",
+          upsell_spec_nutri: "Nutri",
+          upsell_spec_trainer: "Coach",
+          upsell_recovery_title: "Matériel de Récup",
+          upsell_recovery_benefit: '<strong class="text-indigo-300">Membres DMove:</strong> Tarifs Partenaires Exclusifs',
+          upsell_recovery_desc: "Accédez aux outils et bottes de compression au tarif membre.",
+          upsell_recovery_cta: "Commander sur l'App",
+          upsell_testing_cta: "Réserver Testing Day",
+          upsell_call_cta: "Réserver Appel avec David",
+          upsell_testing_price_details: `<div class="flex items-baseline gap-2 mb-2">
+                      <span class="text-3xl font-black text-white font-outfit">150</span>
+                      <span class="text-slate-400 text-sm font-semibold">CHF</span>
+                      <span class="text-slate-500 text-xs font-medium ml-1">(Non-membres)</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-indigo-300">50% Membres DMove:</strong> 75 CHF</span>
+                      </div>
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-emerald-300">Membres de Groupe:</strong> 19 CHF</span>
+                      </div>
+                    </div>`,
+          upsell_call_price_details: `<div class="flex items-baseline gap-2 mb-2">
+                      <span class="text-3xl font-black text-white font-outfit">99</span>
+                      <span class="text-slate-400 text-sm font-semibold">CHF</span>
+                      <span class="text-slate-500 text-xs font-medium ml-1">(Non-membres)</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+                        <span class="text-slate-300 font-medium"><strong class="text-indigo-300">50% Membres DMove:</strong> 50 CHF</span>
+                      </div>
+                    </div>`,
 
           // Contact & Footer
           contact_title:
@@ -6154,6 +5653,28 @@
           chat_error_email: "Veuillez entrer une adresse e-mail valide.",
         },
       };
+
+      function toggleSpectrumCards() {
+        const grid = document.getElementById('spectrum-cards-grid');
+        const chevron = document.getElementById('spectrum-cards-chevron');
+        const label = document.getElementById('spectrum-cards-label');
+        const lang = localStorage.getItem('dmove_lang') || 'en';
+        const isOpen = grid.style.maxHeight !== '0px' && grid.style.maxHeight !== '';
+
+        if (isOpen) {
+          grid.style.maxHeight = '0';
+          grid.style.opacity = '0';
+          chevron.style.transform = 'rotate(0deg)';
+          const closeLabels = { en: 'See the 4 zones', es: 'Ver las 4 zonas', fr: 'Voir les 4 zones' };
+          label.textContent = closeLabels[lang] || closeLabels.en;
+        } else {
+          grid.style.maxHeight = grid.scrollHeight + 'px';
+          grid.style.opacity = '1';
+          chevron.style.transform = 'rotate(180deg)';
+          const openLabels = { en: 'Hide zones', es: 'Ocultar zonas', fr: 'Masquer les zones' };
+          label.textContent = openLabels[lang] || openLabels.en;
+        }
+      }
 
       function selectSpectrumZone(zoneId, shouldScroll = true) {
         const container = document.getElementById("spectrum-breakdown-container");
@@ -6250,7 +5771,17 @@
         // Update Stripe Payment Link locale
         const stripeBtn = document.querySelector('[data-t="pricing_individual_cta"]');
         if (stripeBtn) {
-          stripeBtn.href = `https://buy.stripe.com/cNi14o1A6b56d765Mr6AM03?locale=${lang}`;
+          stripeBtn.href = `https://buy.stripe.com/6oU7sMgv07SUebafn16AM04?locale=${lang}`;
+        }
+
+        const testingBtn = document.querySelector('[data-t="upsell_testing_cta"]');
+        if (testingBtn) {
+          testingBtn.href = `https://buy.stripe.com/5kQ00k92y8WYc327Uz6AM06?locale=${lang}`;
+        }
+
+        const callBtn = document.querySelector('[data-t="upsell_call_cta"]');
+        if (callBtn) {
+          callBtn.href = `https://buy.stripe.com/3cI14oemSa121oo7Uz6AM05?locale=${lang}`;
         }
 
         // Update billing text to correct lang
@@ -6278,11 +5809,225 @@
         // Default select Zone 2 (Stay Alert) on load visually
         selectSpectrumZone(2, false);
 
+        // Stats slider initialization
+        initStatsSlider();
+
         // Force Lucide icons to render for the chatbot
         if (typeof lucide !== "undefined") {
           lucide.createIcons();
         }
       });
+
+      function initStatsSlider() {
+        const track = document.getElementById('hero-stats-track');
+        const dotsContainer = document.getElementById('hero-slider-dots');
+        if (!track || !dotsContainer) return;
+
+        // Get original cards
+        const originalCards = Array.from(track.children);
+        if (originalCards.length === 0) return;
+
+        // Clone cards for infinite loop: clone last to start, clone first to end
+        const firstClone = originalCards[0].cloneNode(true);
+        const lastClone = originalCards[originalCards.length - 1].cloneNode(true);
+        
+        // Remove data-t from clones to avoid translation duplicate hits if needed, but keeping text
+        firstClone.removeAttribute('id');
+        lastClone.removeAttribute('id');
+
+        track.insertBefore(lastClone, originalCards[0]);
+        track.appendChild(firstClone);
+
+        const cards = Array.from(track.children);
+        // Start at index 1 (the first original slide, since index 0 is lastClone)
+        let currentIndex = 1;
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID = 0;
+        let autoPlayTimer = null;
+        let isTransitioning = false;
+
+        // Render dots based on original count
+        dotsContainer.innerHTML = '';
+        originalCards.forEach((_, index) => {
+          const dot = document.createElement('button');
+          dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? 'bg-indigo-500 w-6' : 'bg-white/20'}`;
+          dot.addEventListener('click', () => {
+            if (isTransitioning) return;
+            goToSlide(index + 1);
+            resetAutoPlay();
+            startAutoPlay();
+          });
+          dotsContainer.appendChild(dot);
+        });
+
+        const dots = Array.from(dotsContainer.children);
+
+        // Touch & Mouse Events
+        track.addEventListener('touchstart', touchStart);
+        track.addEventListener('touchend', touchEnd);
+        track.addEventListener('touchmove', touchMove);
+        track.addEventListener('mousedown', dragStart);
+        track.addEventListener('mouseup', dragEnd);
+        track.addEventListener('mouseleave', dragEnd);
+        track.addEventListener('mousemove', dragMove);
+
+        // Transition End event to wrap seamlessly
+        track.addEventListener('transitionend', () => {
+          isTransitioning = false;
+          track.style.transition = 'none';
+          
+          if (currentIndex === 0) {
+            // Jump to the last original card
+            currentIndex = cards.length - 2;
+            updateSliderPosition(false);
+          } else if (currentIndex === cards.length - 1) {
+            // Jump to the first original card
+            currentIndex = 1;
+            updateSliderPosition(false);
+          }
+        });
+
+        window.addEventListener('resize', () => updateSliderPosition(false));
+
+        function dragStart(event) {
+          if (isTransitioning) return;
+          isDragging = true;
+          startPos = event.clientX;
+          resetAutoPlay();
+          track.style.transition = 'none';
+          animationID = requestAnimationFrame(animation);
+        }
+
+        function dragEnd() {
+          if (!isDragging) return;
+          isDragging = false;
+          cancelAnimationFrame(animationID);
+          const movedBy = currentTranslate - prevTranslate;
+          
+          // Minimum drag threshold to switch slides
+          if (movedBy < -50) {
+            currentIndex += 1;
+          } else if (movedBy > 50) {
+            currentIndex -= 1;
+          }
+          
+          goToSlide(currentIndex);
+          startAutoPlay();
+        }
+
+        function dragMove(event) {
+          if (isDragging) {
+            const currentPosition = event.clientX;
+            currentTranslate = prevTranslate + currentPosition - startPos;
+          }
+        }
+
+        function touchStart(event) {
+          if (isTransitioning) return;
+          isDragging = true;
+          startPos = event.touches[0].clientX;
+          resetAutoPlay();
+          track.style.transition = 'none';
+          animationID = requestAnimationFrame(animation);
+        }
+
+        function touchEnd() {
+          if (!isDragging) return;
+          isDragging = false;
+          cancelAnimationFrame(animationID);
+          const movedBy = currentTranslate - prevTranslate;
+          
+          if (movedBy < -30) {
+            currentIndex += 1;
+          } else if (movedBy > 30) {
+            currentIndex -= 1;
+          }
+          
+          goToSlide(currentIndex);
+          startAutoPlay();
+        }
+
+        function touchMove(event) {
+          if (isDragging) {
+            const currentPosition = event.touches[0].clientX;
+            currentTranslate = prevTranslate + currentPosition - startPos;
+          }
+        }
+
+        function animation() {
+          setSliderPosition();
+          if (isDragging) requestAnimationFrame(animation);
+        }
+
+        function setSliderPosition() {
+          track.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+        function updateSliderPosition(useTransition = true) {
+          if (cards.length === 0) return;
+          const cardWidth = cards[0].offsetWidth + 16; // width + gap
+          const sliderWidth = track.parentElement.offsetWidth;
+          
+          // Center the active card
+          let targetTranslate = -currentIndex * cardWidth + (sliderWidth - cards[0].offsetWidth) / 2;
+          
+          if (useTransition) {
+            track.style.transition = 'transform 300ms ease-out';
+            isTransitioning = true;
+          } else {
+            track.style.transition = 'none';
+          }
+          
+          currentTranslate = targetTranslate;
+          prevTranslate = currentTranslate;
+          setSliderPosition();
+        }
+
+        function goToSlide(index) {
+          currentIndex = index;
+          updateSliderPosition(true);
+          
+          // Map to original index to activate corresponding dot (1-based to 0-based)
+          let dotIndex = currentIndex - 1;
+          if (currentIndex === 0) {
+            dotIndex = originalCards.length - 1;
+          } else if (currentIndex === cards.length - 1) {
+            dotIndex = 0;
+          }
+
+          dots.forEach((dot, idx) => {
+            if (idx === dotIndex) {
+              dot.classList.add('bg-indigo-500', 'w-6');
+              dot.classList.remove('bg-white/20');
+            } else {
+              dot.classList.remove('bg-indigo-500', 'w-6');
+              dot.classList.add('bg-white/20');
+            }
+          });
+        }
+
+        function startAutoPlay() {
+          if (autoPlayTimer) clearInterval(autoPlayTimer);
+          autoPlayTimer = setInterval(() => {
+            if (isDragging || isTransitioning) return;
+            currentIndex += 1;
+            goToSlide(currentIndex);
+          }, 4000);
+        }
+
+        function resetAutoPlay() {
+          if (autoPlayTimer) clearInterval(autoPlayTimer);
+        }
+
+        // Initialize positioning
+        setTimeout(() => {
+          goToSlide(1);
+          startAutoPlay();
+        }, 150);
+      }
 
       // Video Modal Functions
       window.openVideoModal = function() {
