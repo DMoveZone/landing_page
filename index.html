@@ -368,9 +368,10 @@
       <div class="absolute inset-0 z-0 overflow-hidden">
         <!-- Background Image with Overlay -->
         <img
+          id="hero-carousel-bg"
           src="/assets/hero.jpg"
           alt="DMove Basketball Performance"
-          class="w-full h-full object-cover opacity-35 mix-blend-luminosity transform scale-105"
+          class="w-full h-full object-cover opacity-35 mix-blend-luminosity transform scale-105 transition-all duration-1000"
         />
         <div
           class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/20 to-slate-950"
@@ -6073,6 +6074,28 @@
           closeVideoModal();
         }
       });
+
+      // Dynamic Hero Background Carousel
+      const heroBackgrounds = [
+        "/assets/hero.jpg",          // Basket
+        "/assets/hero_padel.png",    // Padel
+        "/assets/hero_runner.png",   // Runner
+        "/assets/hero_longevity.png" // Longevity
+      ];
+      let activeBgIndex = 0;
+      const heroBgElement = document.getElementById("hero-carousel-bg");
+      
+      if (heroBgElement) {
+        setInterval(() => {
+          activeBgIndex = (activeBgIndex + 1) % heroBackgrounds.length;
+          // Fade out briefly, swap src, fade back in
+          heroBgElement.style.opacity = 0;
+          setTimeout(() => {
+            heroBgElement.src = heroBackgrounds[activeBgIndex];
+            heroBgElement.style.opacity = 0.35;
+          }, 1000);
+        }, 6000);
+      }
 
       // Immediate icon check for dynamically added content
       if (typeof lucide !== "undefined") {
