@@ -363,61 +363,123 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-indigo"
+      class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-indigo"
     >
       <div class="absolute inset-0 z-0 overflow-hidden">
-        <!-- Background Image with Overlay -->
+        <!-- Single Background Image with Overlay -->
         <img
           id="hero-carousel-bg"
           src="/assets/hero.jpg"
           alt="DMove Basketball Performance"
-          class="w-full h-full object-cover opacity-35 mix-blend-luminosity transform scale-105 transition-all duration-1000"
+          class="w-full h-full object-cover opacity-30 mix-blend-luminosity transform scale-105"
         />
         <div
-          class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/20 to-slate-950"
+          class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/40 to-slate-950"
         ></div>
         <div
           class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"
         ></div>
       </div>
-      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-40 flex flex-col items-center justify-center text-center">
-        <div class="w-full max-w-4xl mx-auto">
-          <p
-            class="font-outfit text-indigo-400 text-sm sm:text-base md:text-xl font-extrabold tracking-wider mb-6 uppercase"
-            data-t="hero_hook"
-          >
-            Solo ganamos si te mantienes sano
-          </p>
-          <h1
-            class="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.15] mb-8 w-full max-w-none mx-auto tracking-tight uppercase"
-            data-t="hero_title"
-          >
-            The system for fewer injuries
-            <br class="hidden sm:block" />
-            &amp; better performance
-          </h1>
-          <p
-            class="text-sm sm:text-base md:text-xl text-slate-300 leading-relaxed mb-10 w-full max-w-3xl mx-auto font-medium"
-            data-t="hero_subtitle_1"
-          >
-            Monitoreamos los 5 factores clave que predicen las lesiones antes de que ocurran.
-          </p>
-          <div class="flex flex-col items-center justify-center w-full">
-            <div
-              class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4 w-full px-2 max-w-md sm:max-w-2xl mx-auto"
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Mobile App Frame Mockup & CTA -->
+          <div class="lg:col-span-5 flex flex-col justify-center items-center relative mt-6 lg:mt-0 order-2 lg:order-1">
+            <!-- Glow Effect behind Phone -->
+            <div class="absolute w-72 h-72 sm:w-96 sm:h-96 bg-indigo-600/30 rounded-full blur-[90px] -z-10 animate-pulse"></div>
+            <div class="absolute w-60 h-60 bg-emerald-500/20 rounded-full blur-[70px] -z-10 translate-y-12"></div>
+
+            <!-- Realistic Smartphone Frame -->
+            <div class="relative w-[280px] sm:w-[310px] rounded-[48px] p-3 bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950 border-[5px] border-slate-700/70 shadow-[0_25px_60px_-15px_rgba(79,70,229,0.4)] group transition-transform duration-500 hover:scale-[1.02]">
+              <!-- Dynamic Island Notch -->
+              <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-slate-950 rounded-full z-30 flex items-center justify-end px-2 gap-1 border border-white/5">
+                <span class="w-2 h-2 rounded-full bg-indigo-500/80"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
+              </div>
+              
+              <!-- Screen Container -->
+              <div class="relative overflow-hidden rounded-[38px] border border-slate-800/80 bg-slate-950 shadow-inner">
+                <img
+                  src="/assets/dmove_app_mobile.png"
+                  alt="DMove Zone App Dashboard en Móvil"
+                  class="w-full h-auto object-cover display-block transition-transform duration-700 group-hover:scale-105"
+                />
+                <!-- Reflection Glass Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+              </div>
+
+              <!-- Floating Live Indicator Badge 1 (Top Left) -->
+              <div class="absolute -top-3 -left-4 sm:-left-6 bg-slate-900/90 border border-emerald-500/40 backdrop-blur-md px-3 py-2 rounded-2xl shadow-xl flex items-center gap-2 z-30 animate-bounce" style="animation-duration: 4s;">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-[11px] font-bold text-emerald-300">Live Health Sync</span>
+              </div>
+
+              <!-- Floating Live Indicator Badge 2 (Bottom Right) -->
+              <div class="absolute -bottom-3 -right-4 sm:-right-6 bg-slate-900/90 border border-indigo-500/40 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2 z-30">
+                <span class="text-sm">🛡️</span>
+                <div class="text-left">
+                  <p class="text-[10px] text-slate-400 font-semibold leading-none">Control Risk</p>
+                  <p class="text-[12px] text-white font-extrabold leading-tight">100% Pain Free</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Primary CTA Button under mobile phone photo -->
+            <a
+              href="https://app.dmovezone.com"
+              target="_blank"
+              class="w-full sm:w-auto px-8 py-4 mt-8 bg-indigo-600 hover:bg-indigo-500 text-white font-black rounded-xl transition-all shadow-[0_0_30px_rgba(79,70,229,0.5)] text-sm md:text-base group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95"
+              data-t="hero_cta_individual"
             >
-              <a
-                href="https://app.dmovezone.com"
-                target="_blank"
-                class="w-full sm:w-auto px-6 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-black rounded-xl transition-all shadow-[0_0_30px_rgba(79,70,229,0.5)] text-sm md:text-base group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95"
-                data-t="hero_cta_individual"
-              >
-                ACTIVA TU PASAPORTE FÍSICO
-                <i
-                  data-lucide="arrow-right"
-                  class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                ></i>
-              </a>
+              ACTIVA TU PASAPORTE FÍSICO
+              <i
+                data-lucide="arrow-right"
+                class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
+          </div>
+
+          <!-- Right Column: Copy & Actions -->
+          <div class="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start order-1 lg:order-2">
+            <p
+              class="font-outfit text-indigo-400 text-xs sm:text-sm md:text-base font-extrabold tracking-widest mb-4 uppercase flex items-center justify-center lg:justify-start gap-2"
+              data-t="hero_hook"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse inline-block shrink-0"></span>
+              BUILDING THE BRIDGE BETWEEN SPORT, HEALTH, PERFORMANCE &amp; MEDICINE
+            </p>
+            
+            <h1
+              class="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.12] mb-6 tracking-tight uppercase"
+              data-t="hero_title"
+            >
+              BE INJURY &amp; PAIN
+              <br />
+              FREE THIS YEAR
+            </h1>
+
+            <!-- Target Audience Pills -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-6">
+              <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-indigo-400/60 transition-colors">
+                <span class="text-base">🏀</span> <span data-t="pill_basket">Basketball</span>
+              </span>
+              <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-cyan-400/60 transition-colors">
+                <span class="text-base">🎾</span> <span data-t="pill_padel">Padel</span>
+              </span>
+              <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-emerald-400/60 transition-colors">
+                <span class="text-base">⚡</span> <span data-t="pill_longevity">Longevity &amp; Active Adults</span>
+              </span>
+            </div>
+
+            <p
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed mb-8 w-full max-w-2xl font-medium"
+              data-t="hero_subtitle_1"
+            >
+              Unimos la ciencia médica, la salud proactiva y el alto rendimiento deportivo en una sola plataforma inteligente para prevenir lesiones antes de que ocurran.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center w-full mb-4">
               <button
                 onclick="openVideoModal()"
                 class="w-full sm:w-auto px-6 py-4 bg-slate-900/60 hover:bg-slate-800/85 text-white border border-white/10 hover:border-indigo-500/50 font-black rounded-xl transition-all text-sm md:text-base group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95 cursor-pointer"
@@ -429,15 +491,29 @@
                 </span>
                 <span data-t="hero_cta_video">CONÓCENOS EN 1 MINUTO</span>
               </button>
+
+              <a
+                href="https://buy.stripe.com/cNi14o1A6b56d765Mr6AM03"
+                target="_blank"
+                class="w-full sm:w-auto px-6 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-black rounded-xl transition-all shadow-[0_0_25px_rgba(79,70,229,0.4)] text-sm md:text-base group flex items-center justify-center gap-3 transform hover:scale-105 active:scale-95 cursor-pointer border border-indigo-400/30"
+              >
+                <i data-lucide="user-check" class="w-4 h-4 text-indigo-200"></i>
+                <span data-t="pricing_indiv_title">Become a Dmove member</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+              </a>
             </div>
+
             <p
-              class="text-xs md:text-sm text-slate-400 mt-2 mb-10 font-medium"
+              class="text-xs md:text-sm text-slate-400 font-medium"
               data-t="hero_microcopy"
             >
               DMove es una membresía de club para el rendimiento físico y la longevidad.
             </p>
           </div>
+
         </div>
+      </div>
+    </section>
 
         <!-- Carousel / Slider Component -->
         <div class="w-full max-w-5xl mx-auto px-2 sm:px-4 relative overflow-hidden mt-8 mb-4">
@@ -3757,11 +3833,14 @@
           hero_badge:
             'Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 font-extrabold tracking-wider">DMOVEZONE</span>',
           hero_hook:
-            "YOUR PROACTIVE HEALTH CLUB. 365 DAYS A YEAR.",
+            "BUILDING THE BRIDGE BETWEEN SPORT, HEALTH, PERFORMANCE &amp; MEDICINE",
+          pill_basket: "Basketball",
+          pill_padel: "Padel",
+          pill_longevity: "Longevity & Active Adults",
           hero_title:
-            'The system for fewer injuries <br class="hidden sm:block"> &amp; better performance',
+            'BE INJURY &amp; PAIN <br /> FREE THIS YEAR',
           hero_subtitle_1:
-            'We monitor the 5 key factors that predict injuries before they happen.',
+            "Connecting sports medicine, proactive health, and peak athletic performance in one intelligent platform to predict injuries before they happen.",
           hero_microcopy:
             "DMove is a club membership for physical performance and longevity.",
           hero_cta_individual: "ACTIVATE YOUR PHYSICAL PASSPORT",
@@ -4461,11 +4540,14 @@
           hero_badge:
             'Bienvenido a <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 font-extrabold tracking-wider">DMOVEZONE</span>',
           hero_hook:
-            "TU CLUB DE SALUD PROACTIVA. LOS 365 DÍAS DEL AÑO.",
+            "CONSTRUYENDO EL PUENTE ENTRE EL DEPORTE, LA SALUD, EL RENDIMIENTO Y LA MEDICINA",
+          pill_basket: "Baloncesto",
+          pill_padel: "Pádel",
+          pill_longevity: "Longevidad y Adultos Activos",
           hero_title:
-            'El sistema para menos lesiones <br class="hidden sm:block"> &amp; mejor rendimiento',
+            'BE INJURY &amp; PAIN <br /> FREE THIS YEAR',
           hero_subtitle_1:
-            'Monitoreamos los 5 factores clave que predicen las lesiones antes de que ocurran.',
+            "Unimos la ciencia médica, la salud proactiva y el alto rendimiento deportivo en una sola plataforma inteligente para prevenir lesiones antes de que ocurran.",
           hero_microcopy:
             "DMove es una membresía de club para el rendimiento físico y la longevidad.",
           hero_cta_individual: "ACTIVA TU PASAPORTE FÍSICO",
@@ -5166,11 +5248,14 @@
           hero_badge:
             'Bienvenue chez <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 font-extrabold tracking-wider">DMOVEZONE</span>',
           hero_hook:
-            "VOTRE CLUB DE SANTÉ PROACTIVE. 365 JOURS PAR AN.",
+            "LE PONT ENTRE SPORT, SANTÉ, PERFORMANCE ET MÉDECINE",
+          pill_basket: "Basket-ball",
+          pill_padel: "Padel",
+          pill_longevity: "Longévité & Adultes Actifs",
           hero_title:
-            'Le système pour moins de blessures <br class="hidden sm:block"> &amp; de meilleures performances',
+            'BE INJURY &amp; PAIN <br /> FREE THIS YEAR',
           hero_subtitle_1:
-            'Nous surveillons les 5 facteurs clés qui prédisent les blessures avant qu\'elles ne surviennent.',
+            "La plateforme intelligente qui relie la médecine du sport, la santé proactive et la haute performance pour prévenir les blessures.",
           hero_microcopy:
             "DMove est une adhésion de club pour la performance physique et la longévité.",
           hero_cta_individual: "ACTIVEZ VOTRE PASSEPORT PHYSIQUE",
@@ -6074,28 +6159,6 @@
           closeVideoModal();
         }
       });
-
-      // Dynamic Hero Background Carousel
-      const heroBackgrounds = [
-        "/assets/hero.jpg",          // Basket
-        "/assets/hero_padel.png",    // Padel
-        "/assets/hero_runner.png",   // Runner
-        "/assets/hero_longevity.png" // Longevity
-      ];
-      let activeBgIndex = 0;
-      const heroBgElement = document.getElementById("hero-carousel-bg");
-      
-      if (heroBgElement) {
-        setInterval(() => {
-          activeBgIndex = (activeBgIndex + 1) % heroBackgrounds.length;
-          // Fade out briefly, swap src, fade back in
-          heroBgElement.style.opacity = 0;
-          setTimeout(() => {
-            heroBgElement.src = heroBackgrounds[activeBgIndex];
-            heroBgElement.style.opacity = 0.35;
-          }, 1000);
-        }, 6000);
-      }
 
       // Immediate icon check for dynamically added content
       if (typeof lucide !== "undefined") {
