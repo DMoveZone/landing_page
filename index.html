@@ -381,10 +381,43 @@
         ></div>
       </div>
       <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center lg:items-start">
           
-          <!-- Left Column: Mobile App Frame Mockup -->
-          <div class="lg:col-span-5 flex flex-col justify-center items-center relative mt-10 lg:mt-0 order-2 lg:order-1 w-full max-w-[320px] sm:max-w-md mx-auto">
+          <!-- Header Block (Top on Mobile [order-1], Top-Right on Desktop [lg:col-span-7 lg:col-start-6]) -->
+          <div class="lg:col-span-7 lg:col-start-6 order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <p
+              class="font-outfit text-indigo-400 text-xs sm:text-sm md:text-base font-extrabold tracking-widest mb-3 sm:mb-4 uppercase flex items-center justify-center lg:justify-start gap-2"
+              data-t="hero_hook"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse inline-block shrink-0"></span>
+              TRACK YOUR BODY’S 5 KEYS TO
+            </p>
+            
+            <h1
+              class="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.12] mb-5 sm:mb-6 tracking-tight uppercase"
+              data-t="hero_title"
+            >
+              PLAY BETTER.
+              <br class="hidden xs:inline" />
+              STAY PAIN FREE.
+            </h1>
+
+            <!-- Target Audience Pills -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-2 lg:mb-0">
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-indigo-400/60 transition-colors">
+                <span class="text-xs sm:text-base">🏀</span> <span data-t="pill_basket">Basketball</span>
+              </span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-cyan-400/60 transition-colors">
+                <span class="text-xs sm:text-base">🎾</span> <span data-t="pill_padel">Padel</span>
+              </span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-emerald-400/60 transition-colors">
+                <span class="text-xs sm:text-base">⚡</span> <span data-t="pill_longevity">Longevity &amp; Active Adults</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Phone Video Block (Middle on Mobile [order-2], Left Column on Desktop [lg:order-1 lg:col-span-5 lg:row-span-2]) -->
+          <div class="lg:col-span-5 lg:col-start-1 lg:row-span-2 order-2 lg:order-1 flex flex-col justify-center items-center relative my-4 lg:my-0 w-full max-w-[320px] sm:max-w-md mx-auto">
             <!-- Glow Effect behind Phone -->
             <div class="absolute w-60 h-60 sm:w-96 sm:h-96 bg-indigo-600/30 rounded-full blur-[80px] sm:blur-[90px] -z-10 animate-pulse"></div>
             <div class="absolute w-48 h-48 sm:w-60 sm:h-60 bg-emerald-500/20 rounded-full blur-[60px] sm:blur-[70px] -z-10 translate-y-12"></div>
@@ -428,38 +461,8 @@
             </div>
           </div>
 
-          <!-- Right Column: Copy & Actions -->
-          <div class="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start order-1 lg:order-2">
-            <p
-              class="font-outfit text-indigo-400 text-xs sm:text-sm md:text-base font-extrabold tracking-widest mb-3 sm:mb-4 uppercase flex items-center justify-center lg:justify-start gap-2"
-              data-t="hero_hook"
-            >
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse inline-block shrink-0"></span>
-              TRACK YOUR BODY’S 5 KEYS TO
-            </p>
-            
-            <h1
-              class="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.12] mb-5 sm:mb-6 tracking-tight uppercase"
-              data-t="hero_title"
-            >
-              PLAY BETTER.
-              <br class="hidden xs:inline" />
-              STAY PAIN FREE.
-            </h1>
-
-            <!-- Target Audience Pills -->
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-6">
-              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-indigo-400/60 transition-colors">
-                <span class="text-xs sm:text-base">🏀</span> <span data-t="pill_basket">Basketball</span>
-              </span>
-              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-cyan-400/60 transition-colors">
-                <span class="text-xs sm:text-base">🎾</span> <span data-t="pill_padel">Padel</span>
-              </span>
-              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-1.5 shadow-sm backdrop-blur-md hover:border-emerald-400/60 transition-colors">
-                <span class="text-xs sm:text-base">⚡</span> <span data-t="pill_longevity">Longevity &amp; Active Adults</span>
-              </span>
-            </div>
-
+          <!-- List & CTA Block (Bottom on Mobile [order-3], Bottom-Right on Desktop [lg:col-span-7 lg:col-start-6]) -->
+          <div class="lg:col-span-7 lg:col-start-6 order-3 flex flex-col items-center lg:items-start text-center lg:text-left">
             <!-- 1-2-3 Feature List Cards -->
             <div
               class="w-full max-w-2xl mb-8 space-y-3 text-left"
